@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>Test: D:/RobotSimulator/test/robot_society/robot society beta/robot object.h 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Test
+   &#160;<span id="projectnumber">Ver 1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('robot_01object_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">robot object.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="robot_01object_8h.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno"><a class="line" href="robot_01object_8h.html#ab69dd643c61be536f4dc344cf7da0be6">    3</a></span>&#160;<span class="preprocessor">#define ROBOT_RADIUS    15      //로봇의 반지름</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="robot_01object_8h.html#a011df6025c2d3ce45d22b4c5635d57b9">    4</a></span>&#160;<span class="preprocessor">#define HEAD_RADIUS     9       //로봇 머리의 반지름</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="robot_01object_8h.html#a8e19c67e3c69ce08ed918ace87a74c8b">    5</a></span>&#160;<span class="preprocessor">#define NECK_LENGTH     -6      //로봇의 목 길이</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="robot_01object_8h.html#a57eb29cf3a6360e85f31162fe0051238">    7</a></span>&#160;<span class="preprocessor">#define MAX_ROBOT_COUNT 1000        //전체 로봇의 수</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="robot_01object_8h.html#a806cee2340617270eaa391aa82cf2933">    9</a></span>&#160;<span class="preprocessor">#define MAX_STAGE_LENGTH        2000    //돌아다닐 영역의 최대 길이</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="robot_01object_8h.html#acd26edb1d514cae1fc08a79e3620e36a">   10</a></span>&#160;<span class="preprocessor">#define MAX_STAGE_HALF_LENGTH   (MAX_STAGE_LENGTH/2)</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="robot_01object_8h.html#abdf34f743a79df4a5405494a5a5ac545">   12</a></span>&#160;<span class="preprocessor">#define V_MAX       (double)30</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="robot_01object_8h.html#a68c709cd29517003a9730f640e9fc39a">   13</a></span>&#160;<span class="preprocessor">#define W_MAX       (double)0.04</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// type</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="robot_01object_8h.html#a9c21a7caee326d7803b94ae1952b27ca">   16</a></span>&#160;<span class="preprocessor">#define IDLE        0</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">// level</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">// main</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// sub</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">// etc</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="parameters_8h.html">parameters.h</a>&quot;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="basic__function_8h.html">basic_function.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="structt_r_g_b___d_a_t_a.html">   33</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="structt_r_g_b___d_a_t_a.html">tRGB_DATA</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="structt_r_g_b___d_a_t_a.html#a3f7e2ad7d2149a3a97d80ee20d86885a">   35</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="structt_r_g_b___d_a_t_a.html#a3f7e2ad7d2149a3a97d80ee20d86885a">R</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="structt_r_g_b___d_a_t_a.html#a632211046298fd9c40a5e3f2737f9333">   36</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="structt_r_g_b___d_a_t_a.html#a632211046298fd9c40a5e3f2737f9333">G</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="structt_r_g_b___d_a_t_a.html#a823c63af8bc649f857e4ff584fb4d116">   37</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="structt_r_g_b___d_a_t_a.html#a823c63af8bc649f857e4ff584fb4d116">B</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}<a class="code" href="robot_01object_8h.html#a75c6c26d8323914890ab25dbdc4bb2f0">RGB_DATA</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="struct_c_h_a_r_a_c_t_o_r.html">   40</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_c_h_a_r_a_c_t_o_r.html">CHARACTOR</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_c_h_a_r_a_c_t_o_r.html#aef2c37b8f18f1024e229578f35f50fe8">   42</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_c_h_a_r_a_c_t_o_r.html#aef2c37b8f18f1024e229578f35f50fe8">type</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_c_h_a_r_a_c_t_o_r.html#acb069295f1926ea78975826e7ee88241">   43</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_c_h_a_r_a_c_t_o_r.html#acb069295f1926ea78975826e7ee88241">level</a>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="struct_c_h_a_r_a_c_t_o_r.html#ac2a12b09928565f8153a6f4d44939e3e">   44</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_c_h_a_r_a_c_t_o_r.html#ac2a12b09928565f8153a6f4d44939e3e">main</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_c_h_a_r_a_c_t_o_r.html#a5f0b5af72109b6b1810c95a5a8d0392f">   45</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_c_h_a_r_a_c_t_o_r.html#a5f0b5af72109b6b1810c95a5a8d0392f">sub</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct_c_h_a_r_a_c_t_o_r.html#a2acd952532431952452d7b747dcace5d">   46</a></span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> <a class="code" href="struct_c_h_a_r_a_c_t_o_r.html#a2acd952532431952452d7b747dcace5d">etc</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}<a class="code" href="robot_01object_8h.html#aac3205732a6c9da4330797b1ed5cce84">CHARACTOR</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_p_u_p_p_e_t.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_p_u_p_p_e_t.html">PUPPET</a> </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="class_p_u_p_p_e_t.html#a03999e942eb31be91023d5ac682707e7">PUPPET</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_p_u_p_p_e_t.html#a29c47a37df01759cc54a9db8e247cba5">~PUPPET</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_p_u_p_p_e_t.html#ae0072b15096137f49173294f62451497">Copy</a>(<a class="code" href="class_p_u_p_p_e_t.html">PUPPET</a> fr);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_p_u_p_p_e_t.html#ae9a389c6276bdcb0191bda256dbf9e6d">Reset</a>();</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_p_u_p_p_e_t.html#a1c1d468d3312fd46188c9d31b028e136">isMeet</a>(<a class="code" href="class_p_u_p_p_e_t.html">PUPPET</a> *p);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="class_p_u_p_p_e_t.html#a1c1d468d3312fd46188c9d31b028e136">isMeet</a>(CPoint p);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_p_u_p_p_e_t.html#a2ac62608c61ebc67fdac2e83d3c53f3d">SetV</a>(<span class="keywordtype">double</span> v_in);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_p_u_p_p_e_t.html#a506a48ca180dae8cc4ee31ae143598bc">SetW</a>(<span class="keywordtype">double</span> w_in);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_p_u_p_p_e_t.html#a86071cd98fc952515ec41efc9bbc43c6">   64</a></span>&#160;    CPoint <a class="code" href="class_p_u_p_p_e_t.html#a86071cd98fc952515ec41efc9bbc43c6">point</a>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="class_p_u_p_p_e_t.html#a17f248828b3bc0cd6a2d873e9f0fc3d6">   65</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_p_u_p_p_e_t.html#a17f248828b3bc0cd6a2d873e9f0fc3d6">theta</a>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_p_u_p_p_e_t.html#aa5cf0175a904be5bd53c9f93431fae2b">   66</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_p_u_p_p_e_t.html#aa19e2bfe2ff8c1ba4b40d382507cfcca">v</a>,<a class="code" href="class_p_u_p_p_e_t.html#aa5cf0175a904be5bd53c9f93431fae2b">w</a>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_p_u_p_p_e_t.html#a896e180b1181e42296fb401aeffba0b4">   68</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_p_u_p_p_e_t.html#a896e180b1181e42296fb401aeffba0b4">body_radius</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_p_u_p_p_e_t.html#a162a6d848fd197296596300efeb5d2f0">   69</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_p_u_p_p_e_t.html#a162a6d848fd197296596300efeb5d2f0">head_radius</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="class_p_u_p_p_e_t.html#a822b5a0d9f607a9d176e0e1d2a26aad6">   70</a></span>&#160;    <span class="keywordtype">double</span> <a class="code" href="class_p_u_p_p_e_t.html#a822b5a0d9f607a9d176e0e1d2a26aad6">neck_length</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_p_u_p_p_e_t.html#ad749c15d31181930acd5b53376a7ebfb">   72</a></span>&#160;    <a class="code" href="structt_r_g_b___d_a_t_a.html">RGB_DATA</a> <a class="code" href="class_p_u_p_p_e_t.html#ad749c15d31181930acd5b53376a7ebfb">head_color</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="class_p_u_p_p_e_t.html#ab55d0df0f8837575424435e20974eb29">   73</a></span>&#160;    <a class="code" href="structt_r_g_b___d_a_t_a.html">RGB_DATA</a> <a class="code" href="class_p_u_p_p_e_t.html#ab55d0df0f8837575424435e20974eb29">body_color</a>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_p_u_p_p_e_t.html#ad75871dc46e1110e54df4a4c64b774a7">   76</a></span>&#160;    <a class="code" href="struct_c_h_a_r_a_c_t_o_r.html">CHARACTOR</a> <a class="code" href="class_p_u_p_p_e_t.html#ad75871dc46e1110e54df4a4c64b774a7">ch</a>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;};</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html">   80</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html">ROBOT_OBJECTS</a></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;{</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#ace6bf31483e80b648e372911f23b4af4">ROBOT_OBJECTS</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#afe5a6b186dc7b512b66a83b739f9e85e">~ROBOT_OBJECTS</a>(<span class="keywordtype">void</span>);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a179c14fe78965952b4762f17c1256de2">Localization</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a1056f8c571a201e3463eca6cd5f5f3cd">Update</a>();</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#afb27a6dd12159b8c463ea4c916fe1b81">Pop</a>(<span class="keywordtype">int</span> num);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a8c34a3e81fb8b08deef46514837d3693">Add</a>(<span class="keywordtype">double</span> x, <span class="keywordtype">double</span> y);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a8c34a3e81fb8b08deef46514837d3693">Add</a>(CPoint p);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a8c34a3e81fb8b08deef46514837d3693">Add</a>();</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    CString <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#af1076c3934eb5b3f46dace8094b84601">Data</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a179c14fe78965952b4762f17c1256de2">Localization</a>(<a class="code" href="class_p_u_p_p_e_t.html">PUPPET</a> *p);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a3d700199d4fcfe10d5e3b57284ac05ea">  105</a></span>&#160;    <a class="code" href="class_p_u_p_p_e_t.html">PUPPET</a> <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a3d700199d4fcfe10d5e3b57284ac05ea">robots</a>[<a class="code" href="robot_01object_8h.html#a57eb29cf3a6360e85f31162fe0051238">MAX_ROBOT_COUNT</a>];</div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a039a8bad59f4ad79a18233be82c38f86">  106</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a039a8bad59f4ad79a18233be82c38f86">robot_count</a>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;};</div>
+<div class="ttc" id="class_r_o_b_o_t___o_b_j_e_c_t_s_html_afe5a6b186dc7b512b66a83b739f9e85e"><div class="ttname"><a href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#afe5a6b186dc7b512b66a83b739f9e85e">ROBOT_OBJECTS::~ROBOT_OBJECTS</a></div><div class="ttdeci">~ROBOT_OBJECTS(void)</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00127">robot object.cpp:127</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_a506a48ca180dae8cc4ee31ae143598bc"><div class="ttname"><a href="class_p_u_p_p_e_t.html#a506a48ca180dae8cc4ee31ae143598bc">PUPPET::SetW</a></div><div class="ttdeci">void SetW(double w_in)</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00099">robot object.cpp:99</a></div></div>
+<div class="ttc" id="struct_c_h_a_r_a_c_t_o_r_html_acb069295f1926ea78975826e7ee88241"><div class="ttname"><a href="struct_c_h_a_r_a_c_t_o_r.html#acb069295f1926ea78975826e7ee88241">CHARACTOR::level</a></div><div class="ttdeci">unsigned char level</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00043">robot object.h:43</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_a29c47a37df01759cc54a9db8e247cba5"><div class="ttname"><a href="class_p_u_p_p_e_t.html#a29c47a37df01759cc54a9db8e247cba5">PUPPET::~PUPPET</a></div><div class="ttdeci">~PUPPET(void)</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00011">robot object.cpp:11</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_a17f248828b3bc0cd6a2d873e9f0fc3d6"><div class="ttname"><a href="class_p_u_p_p_e_t.html#a17f248828b3bc0cd6a2d873e9f0fc3d6">PUPPET::theta</a></div><div class="ttdeci">double theta</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00065">robot object.h:65</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_a1c1d468d3312fd46188c9d31b028e136"><div class="ttname"><a href="class_p_u_p_p_e_t.html#a1c1d468d3312fd46188c9d31b028e136">PUPPET::isMeet</a></div><div class="ttdeci">bool isMeet(PUPPET *p)</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00065">robot object.cpp:65</a></div></div>
+<div class="ttc" id="class_r_o_b_o_t___o_b_j_e_c_t_s_html_ace6bf31483e80b648e372911f23b4af4"><div class="ttname"><a href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#ace6bf31483e80b648e372911f23b4af4">ROBOT_OBJECTS::ROBOT_OBJECTS</a></div><div class="ttdeci">ROBOT_OBJECTS(void)</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00116">robot object.cpp:116</a></div></div>
+<div class="ttc" id="class_r_o_b_o_t___o_b_j_e_c_t_s_html_a1056f8c571a201e3463eca6cd5f5f3cd"><div class="ttname"><a href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a1056f8c571a201e3463eca6cd5f5f3cd">ROBOT_OBJECTS::Update</a></div><div class="ttdeci">void Update()</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00133">robot object.cpp:133</a></div></div>
+<div class="ttc" id="class_r_o_b_o_t___o_b_j_e_c_t_s_html_a179c14fe78965952b4762f17c1256de2"><div class="ttname"><a href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a179c14fe78965952b4762f17c1256de2">ROBOT_OBJECTS::Localization</a></div><div class="ttdeci">void Localization()</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00181">robot object.cpp:181</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_ae0072b15096137f49173294f62451497"><div class="ttname"><a href="class_p_u_p_p_e_t.html#ae0072b15096137f49173294f62451497">PUPPET::Copy</a></div><div class="ttdeci">void Copy(PUPPET fr)</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00015">robot object.cpp:15</a></div></div>
+<div class="ttc" id="robot_01object_8h_html_a57eb29cf3a6360e85f31162fe0051238"><div class="ttname"><a href="robot_01object_8h.html#a57eb29cf3a6360e85f31162fe0051238">MAX_ROBOT_COUNT</a></div><div class="ttdeci">#define MAX_ROBOT_COUNT</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00007">robot object.h:7</a></div></div>
+<div class="ttc" id="robot_01object_8h_html_aac3205732a6c9da4330797b1ed5cce84"><div class="ttname"><a href="robot_01object_8h.html#aac3205732a6c9da4330797b1ed5cce84">CHARACTOR</a></div><div class="ttdeci">struct CHARACTOR CHARACTOR</div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_a896e180b1181e42296fb401aeffba0b4"><div class="ttname"><a href="class_p_u_p_p_e_t.html#a896e180b1181e42296fb401aeffba0b4">PUPPET::body_radius</a></div><div class="ttdeci">double body_radius</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00068">robot object.h:68</a></div></div>
+<div class="ttc" id="struct_c_h_a_r_a_c_t_o_r_html_a2acd952532431952452d7b747dcace5d"><div class="ttname"><a href="struct_c_h_a_r_a_c_t_o_r.html#a2acd952532431952452d7b747dcace5d">CHARACTOR::etc</a></div><div class="ttdeci">unsigned char etc</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00046">robot object.h:46</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_a03999e942eb31be91023d5ac682707e7"><div class="ttname"><a href="class_p_u_p_p_e_t.html#a03999e942eb31be91023d5ac682707e7">PUPPET::PUPPET</a></div><div class="ttdeci">PUPPET(void)</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00006">robot object.cpp:6</a></div></div>
+<div class="ttc" id="struct_c_h_a_r_a_c_t_o_r_html_ac2a12b09928565f8153a6f4d44939e3e"><div class="ttname"><a href="struct_c_h_a_r_a_c_t_o_r.html#ac2a12b09928565f8153a6f4d44939e3e">CHARACTOR::main</a></div><div class="ttdeci">unsigned char main</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00044">robot object.h:44</a></div></div>
+<div class="ttc" id="basic__function_8h_html"><div class="ttname"><a href="basic__function_8h.html">basic_function.h</a></div></div>
+<div class="ttc" id="structt_r_g_b___d_a_t_a_html_a3f7e2ad7d2149a3a97d80ee20d86885a"><div class="ttname"><a href="structt_r_g_b___d_a_t_a.html#a3f7e2ad7d2149a3a97d80ee20d86885a">tRGB_DATA::R</a></div><div class="ttdeci">unsigned char R</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00035">robot object.h:35</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_a822b5a0d9f607a9d176e0e1d2a26aad6"><div class="ttname"><a href="class_p_u_p_p_e_t.html#a822b5a0d9f607a9d176e0e1d2a26aad6">PUPPET::neck_length</a></div><div class="ttdeci">double neck_length</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00070">robot object.h:70</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_ab55d0df0f8837575424435e20974eb29"><div class="ttname"><a href="class_p_u_p_p_e_t.html#ab55d0df0f8837575424435e20974eb29">PUPPET::body_color</a></div><div class="ttdeci">RGB_DATA body_color</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00073">robot object.h:73</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_ad75871dc46e1110e54df4a4c64b774a7"><div class="ttname"><a href="class_p_u_p_p_e_t.html#ad75871dc46e1110e54df4a4c64b774a7">PUPPET::ch</a></div><div class="ttdeci">CHARACTOR ch</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00076">robot object.h:76</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html"><div class="ttname"><a href="class_p_u_p_p_e_t.html">PUPPET</a></div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00049">robot object.h:49</a></div></div>
+<div class="ttc" id="structt_r_g_b___d_a_t_a_html"><div class="ttname"><a href="structt_r_g_b___d_a_t_a.html">tRGB_DATA</a></div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00033">robot object.h:33</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_a2ac62608c61ebc67fdac2e83d3c53f3d"><div class="ttname"><a href="class_p_u_p_p_e_t.html#a2ac62608c61ebc67fdac2e83d3c53f3d">PUPPET::SetV</a></div><div class="ttdeci">void SetV(double v_in)</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00090">robot object.cpp:90</a></div></div>
+<div class="ttc" id="struct_c_h_a_r_a_c_t_o_r_html"><div class="ttname"><a href="struct_c_h_a_r_a_c_t_o_r.html">CHARACTOR</a></div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00040">robot object.h:40</a></div></div>
+<div class="ttc" id="class_r_o_b_o_t___o_b_j_e_c_t_s_html_afb27a6dd12159b8c463ea4c916fe1b81"><div class="ttname"><a href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#afb27a6dd12159b8c463ea4c916fe1b81">ROBOT_OBJECTS::Pop</a></div><div class="ttdeci">void Pop(int num)</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00238">robot object.cpp:238</a></div></div>
+<div class="ttc" id="structt_r_g_b___d_a_t_a_html_a823c63af8bc649f857e4ff584fb4d116"><div class="ttname"><a href="structt_r_g_b___d_a_t_a.html#a823c63af8bc649f857e4ff584fb4d116">tRGB_DATA::B</a></div><div class="ttdeci">unsigned char B</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00037">robot object.h:37</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_aa19e2bfe2ff8c1ba4b40d382507cfcca"><div class="ttname"><a href="class_p_u_p_p_e_t.html#aa19e2bfe2ff8c1ba4b40d382507cfcca">PUPPET::v</a></div><div class="ttdeci">double v</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00066">robot object.h:66</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_ad749c15d31181930acd5b53376a7ebfb"><div class="ttname"><a href="class_p_u_p_p_e_t.html#ad749c15d31181930acd5b53376a7ebfb">PUPPET::head_color</a></div><div class="ttdeci">RGB_DATA head_color</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00072">robot object.h:72</a></div></div>
+<div class="ttc" id="struct_c_h_a_r_a_c_t_o_r_html_a5f0b5af72109b6b1810c95a5a8d0392f"><div class="ttname"><a href="struct_c_h_a_r_a_c_t_o_r.html#a5f0b5af72109b6b1810c95a5a8d0392f">CHARACTOR::sub</a></div><div class="ttdeci">unsigned char sub</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00045">robot object.h:45</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_ae9a389c6276bdcb0191bda256dbf9e6d"><div class="ttname"><a href="class_p_u_p_p_e_t.html#ae9a389c6276bdcb0191bda256dbf9e6d">PUPPET::Reset</a></div><div class="ttdeci">void Reset()</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00037">robot object.cpp:37</a></div></div>
+<div class="ttc" id="struct_c_h_a_r_a_c_t_o_r_html_aef2c37b8f18f1024e229578f35f50fe8"><div class="ttname"><a href="struct_c_h_a_r_a_c_t_o_r.html#aef2c37b8f18f1024e229578f35f50fe8">CHARACTOR::type</a></div><div class="ttdeci">unsigned char type</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00042">robot object.h:42</a></div></div>
+<div class="ttc" id="structt_r_g_b___d_a_t_a_html_a632211046298fd9c40a5e3f2737f9333"><div class="ttname"><a href="structt_r_g_b___d_a_t_a.html#a632211046298fd9c40a5e3f2737f9333">tRGB_DATA::G</a></div><div class="ttdeci">unsigned char G</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00036">robot object.h:36</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_aa5cf0175a904be5bd53c9f93431fae2b"><div class="ttname"><a href="class_p_u_p_p_e_t.html#aa5cf0175a904be5bd53c9f93431fae2b">PUPPET::w</a></div><div class="ttdeci">double w</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00066">robot object.h:66</a></div></div>
+<div class="ttc" id="robot_01object_8h_html_a75c6c26d8323914890ab25dbdc4bb2f0"><div class="ttname"><a href="robot_01object_8h.html#a75c6c26d8323914890ab25dbdc4bb2f0">RGB_DATA</a></div><div class="ttdeci">struct tRGB_DATA RGB_DATA</div></div>
+<div class="ttc" id="class_r_o_b_o_t___o_b_j_e_c_t_s_html_a3d700199d4fcfe10d5e3b57284ac05ea"><div class="ttname"><a href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a3d700199d4fcfe10d5e3b57284ac05ea">ROBOT_OBJECTS::robots</a></div><div class="ttdeci">PUPPET robots[MAX_ROBOT_COUNT]</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00105">robot object.h:105</a></div></div>
+<div class="ttc" id="class_r_o_b_o_t___o_b_j_e_c_t_s_html"><div class="ttname"><a href="class_r_o_b_o_t___o_b_j_e_c_t_s.html">ROBOT_OBJECTS</a></div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00080">robot object.h:80</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_a86071cd98fc952515ec41efc9bbc43c6"><div class="ttname"><a href="class_p_u_p_p_e_t.html#a86071cd98fc952515ec41efc9bbc43c6">PUPPET::point</a></div><div class="ttdeci">CPoint point</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00064">robot object.h:64</a></div></div>
+<div class="ttc" id="parameters_8h_html"><div class="ttname"><a href="parameters_8h.html">parameters.h</a></div></div>
+<div class="ttc" id="class_p_u_p_p_e_t_html_a162a6d848fd197296596300efeb5d2f0"><div class="ttname"><a href="class_p_u_p_p_e_t.html#a162a6d848fd197296596300efeb5d2f0">PUPPET::head_radius</a></div><div class="ttdeci">double head_radius</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00069">robot object.h:69</a></div></div>
+<div class="ttc" id="class_r_o_b_o_t___o_b_j_e_c_t_s_html_af1076c3934eb5b3f46dace8094b84601"><div class="ttname"><a href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#af1076c3934eb5b3f46dace8094b84601">ROBOT_OBJECTS::Data</a></div><div class="ttdeci">CString Data(int i)</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00203">robot object.cpp:203</a></div></div>
+<div class="ttc" id="class_r_o_b_o_t___o_b_j_e_c_t_s_html_a8c34a3e81fb8b08deef46514837d3693"><div class="ttname"><a href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a8c34a3e81fb8b08deef46514837d3693">ROBOT_OBJECTS::Add</a></div><div class="ttdeci">void Add()</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8cpp_source.html#l00275">robot object.cpp:275</a></div></div>
+<div class="ttc" id="class_r_o_b_o_t___o_b_j_e_c_t_s_html_a039a8bad59f4ad79a18233be82c38f86"><div class="ttname"><a href="class_r_o_b_o_t___o_b_j_e_c_t_s.html#a039a8bad59f4ad79a18233be82c38f86">ROBOT_OBJECTS::robot_count</a></div><div class="ttdeci">int robot_count</div><div class="ttdef"><b>Definition:</b> <a href="robot_01object_8h_source.html#l00106">robot object.h:106</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9919179e432798222cc4a525897a83ee.html">RobotSimulator</a></li><li class="navelem"><a class="el" href="dir_5b3ce41fc6dfa65445c9be191f166a36.html">test</a></li><li class="navelem"><a class="el" href="dir_06cded7edbda7e78bf677bcd5b78cc89.html">robot_society</a></li><li class="navelem"><a class="el" href="dir_05ef4318fc9e3da04538da5d2600d340.html">robot society beta</a></li><li class="navelem"><a class="el" href="robot_01object_8h.html">robot object.h</a></li>
+    <li class="footer">생성시간 : 화 1월 27 2015 14:16:02, 프로젝트명 : Test, 생성자 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

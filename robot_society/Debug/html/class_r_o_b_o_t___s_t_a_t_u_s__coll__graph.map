@@ -1,0 +1,6 @@
+<map id="ROBOT_STATUS" name="ROBOT_STATUS">
+<area shape="rect" id="node3" href="$class_r_o_b_o_t___o_b_j_e_c_t_s.html" title="{ROBOT_OBJECTS\n|+ robot_count\l|+ ROBOT_OBJECTS()\l+ ~ROBOT_OBJECTS()\l+ Localization()\l+ Update()\l+ Pop()\l+ Add()\l+ Add()\l+ Add()\l+ Data()\l}" alt="" coords="131,549,292,744"/>
+<area shape="rect" id="node4" href="$class_p_u_p_p_e_t.html" title="{PUPPET\n|+ point\l+ theta\l+ v\l+ w\l+ body_radius\l+ head_radius\l+ neck_length\l|+ PUPPET()\l+ ~PUPPET()\l+ Copy()\l+ Reset()\l+ isMeet()\l+ isMeet()\l+ SetV()\l+ SetW()\l}" alt="" coords="159,219,263,487"/>
+<area shape="rect" id="node5" href="$struct_c_h_a_r_a_c_t_o_r.html" title="{CHARACTOR\n|+ type\l+ level\l+ main\l+ sub\l+ etc\l|}" alt="" coords="99,5,201,141"/>
+<area shape="rect" id="node6" href="$structt_r_g_b___d_a_t_a.html" title="{tRGB_DATA\n|+ R\l+ G\l+ B\l|}" alt="" coords="225,20,320,127"/>
+</map>

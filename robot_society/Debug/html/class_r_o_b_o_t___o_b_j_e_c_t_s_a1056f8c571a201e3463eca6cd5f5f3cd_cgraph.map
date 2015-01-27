@@ -1,0 +1,7 @@
+<map id="ROBOT_OBJECTS::Update" name="ROBOT_OBJECTS::Update">
+<area shape="rect" id="node2" href="$basic__function_8cpp.html#af6ce95ef5e85d08d3f341867ad29f0e1" title="_Deg" alt="" coords="292,5,344,32"/>
+<area shape="rect" id="node3" href="$basic__function_8cpp.html#ad7d9b43bb3e8f6d2a225a2358bbc77c3" title="isRandom" alt="" coords="278,56,358,83"/>
+<area shape="rect" id="node4" href="$class_r_o_b_o_t___o_b_j_e_c_t_s.html#afb27a6dd12159b8c463ea4c916fe1b81" title="ROBOT_OBJECTS::Pop" alt="" coords="236,107,400,133"/>
+<area shape="rect" id="node5" href="$class_p_u_p_p_e_t.html#a2ac62608c61ebc67fdac2e83d3c53f3d" title="PUPPET::SetV" alt="" coords="263,157,373,184"/>
+<area shape="rect" id="node6" href="$class_p_u_p_p_e_t.html#a506a48ca180dae8cc4ee31ae143598bc" title="PUPPET::SetW" alt="" coords="261,208,375,235"/>
+</map>

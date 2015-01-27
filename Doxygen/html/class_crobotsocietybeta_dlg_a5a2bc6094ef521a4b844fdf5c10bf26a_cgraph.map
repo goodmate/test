@@ -1,0 +1,11 @@
+<map id="CrobotsocietybetaDlg::OnLButtonDown" name="CrobotsocietybetaDlg::OnLButtonDown">
+<area shape="rect" id="node2" href="$class_p_u_p_p_e_t.html#a1c1d468d3312fd46188c9d31b028e136" title="PUPPET::isMeet" alt="" coords="236,5,357,32"/>
+<area shape="rect" id="node4" href="$class_crobotsocietybeta_dlg.html#afe205f2330eaa2b6b627a8d1770cb380" title="CrobotsocietybetaDlg::_iP" alt="" coords="210,56,383,83"/>
+<area shape="rect" id="node7" href="$class_r_o_b_o_t___s_t_a_t_u_s.html#ae49f37ff3b4186754a5e4df64ef756a7" title="ROBOT_STATUS::AddStatus" alt="" coords="200,107,393,133"/>
+<area shape="rect" id="node8" href="$class_r_o_b_o_t___o_b_j_e_c_t_s.html#af1076c3934eb5b3f46dace8094b84601" title="ROBOT_OBJECTS::Data" alt="" coords="213,157,381,184"/>
+<area shape="rect" id="node9" href="$class_r_o_b_o_t___o_b_j_e_c_t_s.html#aa461f5d461995fb7b73e6b4419e9ee6b" title="ROBOT_OBJECTS::Add" alt="" coords="215,208,379,235"/>
+<area shape="rect" id="node3" href="$basic__function_8cpp.html#a6b82959d2914c6d32faed95035286090" title="Get_Length" alt="" coords="483,5,573,32"/>
+<area shape="rect" id="node5" href="$class_crobotsocietybeta_dlg.html#af56d98e91f4df4d49a084c707900ec50" title="CrobotsocietybetaDlg::_iX" alt="" coords="443,56,613,83"/>
+<area shape="rect" id="node6" href="$class_crobotsocietybeta_dlg.html#a0f668ec19703acd37a6eb6ac958074f3" title="CrobotsocietybetaDlg::_iY" alt="" coords="441,107,615,133"/>
+<area shape="rect" id="node10" href="$class_p_u_p_p_e_t.html#ae9a389c6276bdcb0191bda256dbf9e6d" title="PUPPET::Reset" alt="" coords="470,208,586,235"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="CrobotsocietybetaDlg::OnTimer" name="CrobotsocietybetaDlg::OnTimer">
+<area shape="rect" id="node2" href="$class_r_o_b_o_t___o_b_j_e_c_t_s.html#a179c14fe78965952b4762f17c1256de2" title="ROBOT_OBJECTS::Localization" alt="" coords="200,5,411,32"/>
+<area shape="rect" id="node3" href="$class_r_o_b_o_t___s_t_a_t_u_s.html#aad299f62c8743751fe33003ccbe5deec" title="ROBOT_STATUS::Update" alt="" coords="219,56,392,83"/>
+<area shape="rect" id="node4" href="$class_r_o_b_o_t___o_b_j_e_c_t_s.html#a1056f8c571a201e3463eca6cd5f5f3cd" title="ROBOT_OBJECTS::Update" alt="" coords="214,107,397,133"/>
+<area shape="rect" id="node5" href="$basic__function_8cpp.html#af6ce95ef5e85d08d3f341867ad29f0e1" title="_Deg" alt="" coords="515,5,567,32"/>
+<area shape="rect" id="node6" href="$class_p_u_p_p_e_t.html#a2ac62608c61ebc67fdac2e83d3c53f3d" title="PUPPET::SetV" alt="" coords="485,56,596,83"/>
+<area shape="rect" id="node7" href="$class_p_u_p_p_e_t.html#a506a48ca180dae8cc4ee31ae143598bc" title="PUPPET::SetW" alt="" coords="483,107,598,133"/>
+<area shape="rect" id="node8" href="$basic__function_8cpp.html#ad7d9b43bb3e8f6d2a225a2358bbc77c3" title="isRandom" alt="" coords="501,157,581,184"/>
+<area shape="rect" id="node9" href="$class_r_o_b_o_t___o_b_j_e_c_t_s.html#afb27a6dd12159b8c463ea4c916fe1b81" title="ROBOT_OBJECTS::Pop" alt="" coords="459,208,623,235"/>
+</map>

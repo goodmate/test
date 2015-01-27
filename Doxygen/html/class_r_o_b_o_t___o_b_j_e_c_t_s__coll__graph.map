@@ -1,0 +1,5 @@
+<map id="ROBOT_OBJECTS" name="ROBOT_OBJECTS">
+<area shape="rect" id="node2" href="$class_p_u_p_p_e_t.html" title="{PUPPET\n|+ point\l+ theta\l+ v\l+ w\l+ body_radius\l+ head_radius\l+ neck_length\l|+ PUPPET()\l+ ~PUPPET()\l+ Copy()\l+ Reset()\l+ isMeet()\l+ isMeet()\l+ SetV()\l+ SetW()\l}" alt="" coords="66,219,170,487"/>
+<area shape="rect" id="node3" href="$struct_c_h_a_r_a_c_t_o_r.html" title="{CHARACTOR\n|+ type\l+ level\l+ main\l+ sub\l+ etc\l|}" alt="" coords="5,5,108,141"/>
+<area shape="rect" id="node4" href="$structt_r_g_b___d_a_t_a.html" title="{tRGB_DATA\n|+ R\l+ G\l+ B\l|}" alt="" coords="132,20,227,127"/>
+</map>
