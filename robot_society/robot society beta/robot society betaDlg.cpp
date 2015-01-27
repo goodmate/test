@@ -1,9 +1,17 @@
-// robot society betaDlg.cpp : 구현 파일
-//
+ /**
+ @file	robot society betaDlg.cpp
+ @date	2015/01/27
+ @author	joomin Kim ( goodmate2@naver.com )
+ @version	1.0
+ @brief	메인 프로그램
+ */
 
-#include "stdafx.h"
+#include "Common\stdafx.h"
+#include "afxwin.h"
 #include "robot society beta.h"
 #include "robot society betaDlg.h"
+
+#include "Common\map_2d.h" // DXF 파일을 로딩하여 맵으로 저장
 
 
 #ifdef _DEBUG
@@ -55,6 +63,7 @@ CrobotsocietybetaDlg::CrobotsocietybetaDlg(CWnd* pParent /*=NULL*/)
 	, m_bIsRun(false)
 	, m_nSpeed(6)
 	, m_bStatusDlg(false)
+	, m_sLogString(_T(""))
 {
 	m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
 }
@@ -63,6 +72,7 @@ void CrobotsocietybetaDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialog::DoDataExchange(pDX);
 	DDX_Control(pDX, IDC_SLIDER_SPEED, m_SliderSpeed);
+	DDX_Control(pDX, IDC_LOG, m_log);
 }
 
 BEGIN_MESSAGE_MAP(CrobotsocietybetaDlg, CDialog)
@@ -80,6 +90,7 @@ BEGIN_MESSAGE_MAP(CrobotsocietybetaDlg, CDialog)
 	ON_WM_LBUTTONDOWN()
 	ON_NOTIFY(NM_CUSTOMDRAW, IDC_SLIDER_SPEED, &CrobotsocietybetaDlg::OnNMCustomdrawSliderSpeed)
 	ON_BN_CLICKED(IDB_OPEN_STATUS, &CrobotsocietybetaDlg::OnBnClickedOpenStatus)
+	ON_BN_CLICKED(IDC_BUTTON_LOAD_MAP, &CrobotsocietybetaDlg::OnBnClickedButtonLoadMap)
 END_MESSAGE_MAP()
 
 
@@ -113,12 +124,30 @@ BOOL CrobotsocietybetaDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 작은 아이콘을 설정합니다.
 
 	// TODO: 여기에 추가 초기화 작업을 추가합니다.
+	showLog("초기화 \r\n");
+
+	//m_sLogString += "초기화";
+	//m_log.SetWindowText(m_sLogString);
+	//m_log.LineScroll(m_log.GetLineCount());
+
+
+
+
 	robot_status_dlg = new ROBOT_STATUS;
 	robot_status_dlg->status_hander = &robot_hander;
 
 	RECT stage1_rect;
 	CStatic *pictureBox = (CStatic *)GetDlgItem(IDC_STATIC_STAGE1);
 	pictureBox->GetClientRect(&stage1_rect);
+	showLog("로봇추가 \r\n");
+
+	//load_dxf (g_ini.map_file, &_map_2d);
+	//load_dxf ("D:\RobotSimulator\test\robot_society\robot society beta\map\modelhouse.dxf", &_map_2d);
+	//PictureBox1.Image = System.Drawing.Image.FromFile("C:\test.jpg")
+	//pctBox->Image = Image::FromFile(L"E:\\Programs\\Person.bmp");
+
+
+
 
 	stage1_offset_x = stage1_offset_y = 12;		//MFC Dialog 경계선
 	//stage1_offset_x = stage1_offset_y = 0;	//MFC Dialog 경계선
@@ -633,4 +662,75 @@ void CrobotsocietybetaDlg::OnBnClickedOpenStatus()
 
 
 	UpdateData(TRUE);
+}
+
+
+ /**
+ @fn void CrobotsocietybetaDlg::OnBnClickedButtonLoadMap()
+
+ @brief addtion funtion
+ @date 2012/07/02
+
+ @author joomin kim (  )
+
+ @param a 정수형 변수
+ @param b 정수형 변수
+
+ @return 더해진 값을 리턴
+
+ @exception 
+
+ @remark 이 함수는 정수형 덧셈을 해주는 함수
+ */
+void CrobotsocietybetaDlg::OnBnClickedButtonLoadMap()
+{
+	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+		CFileDialog fdlg(TRUE, "dxf", "*.dxf", OFN_FILEMUSTEXIST| OFN_HIDEREADONLY, 
+		"Map Files (*.dxf)|*.dxf|All Files (*.*)|*.*||", this);
+
+	if (IDOK == fdlg.DoModal ()) {
+		CString fileName = fdlg.GetPathName ();
+
+		//strncpy (g_ini.map_file, (LPCSTR)fileName, MAX_PATH);
+
+		_map_2d.clear();
+		load_dxf ((LPCSTR)fileName, &_map_2d);
+
+		// load_dxf() 함수로 읽어들인 맵 정보는 mm로 저장되어있다. 
+		// 이 데이터를 m로 단위 변경한다.
+		for (unsigned int i=0; i<_map_2d.size(); ++i) {
+			_map_2d[i].x0 *= 0.001;
+			_map_2d[i].y0 *= 0.001;
+			_map_2d[i].z0 *= 0.001;
+			_map_2d[i].x1 *= 0.001;
+			_map_2d[i].y1 *= 0.001;
+			_map_2d[i].z1 *= 0.001; 
+		}
+	}
+
+}
+
+ /**
+ @fn void CrobotsocietybetaDlg::showLog(CString strLog)
+
+ @brief addtion funtion
+ @date 2012/07/02
+
+ @author joomin kim (  )
+
+ @param a 정수형 변수
+ @param b 정수형 변수
+
+ @return 더해진 값을 리턴
+
+ @exception 
+
+ @remark 이 함수는 정수형 덧셈을 해주는 함수
+ */
+
+void CrobotsocietybetaDlg::showLog(CString strLog)
+{
+	m_sLogString += strLog;
+	m_log.SetWindowText(m_sLogString);
+	m_log.LineScroll(m_log.GetLineCount());
 }

@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['_7ecscrolledit',['~CScrollEdit',['../class_c_scroll_edit.html#a9ed91b85e51eeb6fbf8aada7d68960cb',1,'CScrollEdit']]],
-  ['_7epuppet',['~PUPPET',['../class_p_u_p_p_e_t.html#a29c47a37df01759cc54a9db8e247cba5',1,'PUPPET']]],
-  ['_7erobot_5fobjects',['~ROBOT_OBJECTS',['../class_r_o_b_o_t___o_b_j_e_c_t_s.html#afe5a6b186dc7b512b66a83b739f9e85e',1,'ROBOT_OBJECTS']]],
-  ['_7erobot_5fstatus',['~ROBOT_STATUS',['../class_r_o_b_o_t___s_t_a_t_u_s.html#a6879d6a178b704c928f35ec3c8ba65c9',1,'ROBOT_STATUS']]]
+  ['transfer',['Transfer',['../class_c_ini.html#a045d01fc8e14ca5b296428325492cfdc',1,'CIni::Transfer(bool bSave, const char *keyName, char *strData, DWORD nSize, char *defaultData=&quot;&quot;)'],['../class_c_ini.html#aa38fcded3b7197791b6de7706e2d5fe1',1,'CIni::Transfer(bool bSave, const char *keyName, bool &amp;boolData, bool defaultData=false)'],['../class_c_ini.html#a1325e04f3e1d1bd0b921f4bb3d943522',1,'CIni::Transfer(bool bSave, const char *keyName, int &amp;intData, int defaultData=0)'],['../class_c_ini.html#a47961ae191260c9ce400e9f60df8557c',1,'CIni::Transfer(bool bSave, const char *keyName, long &amp;longData, long defaultData=0)'],['../class_c_ini.html#a8a3de2065921dcd0d74f3858aab263d5',1,'CIni::Transfer(bool bSave, const char *keyName, DWORD &amp;dwordData, DWORD defaultData=0)'],['../class_c_ini.html#a00aab9d268679d7793da151a762ab8a5',1,'CIni::Transfer(bool bSave, const char *keyName, float &amp;floatData, float defaultData=0.0f)'],['../class_c_ini.html#a5df8c6dce613c6b46db86647642ca8ab',1,'CIni::Transfer(bool bSave, const char *keyName, double &amp;doubleData, double defaultData=0.0)']]]
 ];

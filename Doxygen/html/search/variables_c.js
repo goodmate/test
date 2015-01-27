@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['uwm_5fchecktext',['UWM_CHECKTEXT',['../class_c_scroll_edit.html#a01110ba0724a0ac7b1c3c8a454c308dc',1,'CScrollEdit']]]
+  ['point',['point',['../class_p_u_p_p_e_t.html#a86071cd98fc952515ec41efc9bbc43c6',1,'PUPPET']]],
+  ['point_5flclk',['point_lclk',['../class_crobotsocietybeta_dlg.html#a2cc818568c877dc2085aea2e5be12731',1,'CrobotsocietybetaDlg']]],
+  ['point_5frclk',['point_rclk',['../class_crobotsocietybeta_dlg.html#a07d1c20d7d535712a9e30d5dcde7af15',1,'CrobotsocietybetaDlg']]]
 ];

@@ -302,6 +302,50 @@
 				>
 			</File>
 		</Filter>
+		<Filter
+			Name="Common"
+			>
+			<File
+				RelativePath=".\Common\dxf_parse.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Common\dxf_parse.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Common\Ini.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Common\Ini.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Common\map_2d.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Common\map_2d.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Common\mm.h"
+				>
+			</File>
+			<File
+				RelativePath=".\Common\MultimediaTimer.cpp"
+				>
+			</File>
+			<File
+				RelativePath=".\Common\MultimediaTimer.h"
+				>
+			</File>
+		</Filter>
+		<File
+			RelativePath=".\ClassDiagram1.cd"
+			>
+		</File>
 		<File
 			RelativePath=".\ReadMe.txt"
 			>

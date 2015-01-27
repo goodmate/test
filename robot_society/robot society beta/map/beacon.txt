@@ -1,0 +1,12 @@
+# id	x	y	z	r
+#id - beacon's unique id
+# x - beacon's x position
+# y - beacon's y position
+# z - beacon's z position
+# r - beacon's detection radius
+ 
+2000  0.	0.		2.		6 
+#2001  0.	10.		2.		6 
+#2002  10.	10.		2.		6 
+#2003  10.	0.		2.		6 
+#2004  5.	5.		2.		6 

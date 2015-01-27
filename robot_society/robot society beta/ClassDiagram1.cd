@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ROBOT_STATUS">
+    <Position X="0.5" Y="0.5" Width="3.25" />
+    <NestedTypes>
+      <Enum Name="ROBOT_STATUS::__unnamed_00c2_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>robot_status.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BIQAABEAQACAAAAAAhBAAQAAAhBIAIAAEAAAAHAAkAA=</HashCode>
+      <FileName>robot_status.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CrobotsocietybetaDlg">
+    <Position X="2.5" Y="0.5" Width="3.75" />
+    <NestedTypes>
+      <Enum Name="CrobotsocietybetaDlg::__unnamed_00bd_1" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>robot society betaDlg.h</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>UgKAACFgJAQAIAjBArJIEgCAgBQIBRQAAAACEAgQDlQ=</HashCode>
+      <FileName>robot society betaDlg.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="맑은 고딕" Size="9" />
+</ClassDiagram>

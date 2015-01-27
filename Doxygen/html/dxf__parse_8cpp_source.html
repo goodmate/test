@@ -1,0 +1,414 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.9.1"/>
+<title>Test: D:/RobotSimulator/test/robot_society/robot society beta/Common/dxf_parse.cpp 소스 파일</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { init_search(); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">Test
+   &#160;<span id="projectnumber">Ver 1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 다음에 의해 생성됨 :  Doxygen 1.8.9.1 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'검색');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>메인&#160;페이지</span></a></li>
+      <li><a href="annotated.html"><span>클래스</span></a></li>
+      <li class="current"><a href="files.html"><span>파일들</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="검색" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>파일&#160;목록</span></a></li>
+      <li><a href="globals.html"><span>파일&#160;멤버</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('dxf__parse_8cpp_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">dxf_parse.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="dxf__parse_8cpp.html">이 파일의 문서화 페이지로 가기</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="stdafx_8h.html">StdAfx.h</a>&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;float.h&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;string.h&gt;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="dxf__parse_8h.html">dxf_parse.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="dxf__parse_8cpp.html#aeca034f67218340ecb2261a22c2f3dcd">    8</a></span>&#160;<span class="preprocessor">#define BUFSIZE     2048</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// static float curthick;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="dxf__parse_8cpp.html#ad3de777f569e331efcf1569f364fff65">   11</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="dxf__parse_8cpp.html#a877528f74a7c86a3b4ce4447999774b0">xcoords</a>[10], <a class="code" href="dxf__parse_8cpp.html#a5e871b631440734aebde34a0665b5e36">ycoords</a>[10], <a class="code" href="dxf__parse_8cpp.html#ad3de777f569e331efcf1569f364fff65">zcoords</a>[10];</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="dxf__parse_8cpp.html#acba380858ef541a35cc9c8b5e5c13464">   12</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">float</span> <a class="code" href="dxf__parse_8cpp.html#acba380858ef541a35cc9c8b5e5c13464">floats</a>[10], <a class="code" href="dxf__parse_8cpp.html#a65edb588a314a9ded0f63cb15cb9d394">angles</a>[10];</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="dxf__parse_8cpp.html#a53605ccbcd60d7047ac41d9f7c8b25aa">   13</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="dxf__parse_8cpp.html#a53605ccbcd60d7047ac41d9f7c8b25aa">ints</a>[10];</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// read a group code and the next line from infile</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="dxf__parse_8cpp.html#a234219fdd9f9da093b7c77e020778ae9">   16</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="dxf__parse_8cpp.html#a234219fdd9f9da093b7c77e020778ae9">getline</a> (FILE *infile, <span class="keywordtype">char</span> linbuf[<a class="code" href="dxf__parse_8cpp.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>], <span class="keywordtype">int</span> buf_size)      </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    fgets (linbuf, buf_size, infile);   <span class="comment">// get a line from .DXF</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">if</span> (feof (infile)) {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">int</span> groupcode;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    sscanf (linbuf, <span class="stringliteral">&quot;%3d&quot;</span>, &amp;groupcode);  <span class="comment">// scan out group code</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    fgets (linbuf, buf_size, infile);   <span class="comment">// get a line from .DXF</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordflow">if</span> (feof(infile)) {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> groupcode;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="dxf__parse_8cpp.html#a3c31bf02e47266d9bfc29a138f1b6d32">   35</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="dxf__parse_8cpp.html#a3c31bf02e47266d9bfc29a138f1b6d32">writeobj</a>(vector&lt;DXF_ENTITY_ITEM&gt; *items, <span class="keywordtype">char</span> curobj[80])  <span class="comment">// dump out current object we should have all info on</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;LINE&quot;</span>)) {   </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">// a VERY skinny triangle!</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html">DXF_ENTITY_ITEM</a> e;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        e.<a class="code" href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a7f0b6213761ff8cd3dde6aa02066df48">type</a>  = <a class="code" href="dxf__parse_8h.html#aa2b22a1ff8d505680df7678a8b47def8a91c037739f9e08e44a2988367bd27579">ET_LINE</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        e.<a class="code" href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a935c060a6afc24e6963c31833356078a">x0</a> = <a class="code" href="dxf__parse_8cpp.html#a877528f74a7c86a3b4ce4447999774b0">xcoords</a>[0], e.<a class="code" href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a5ddb3d9be861ae08ccd259c0431f804a">y0</a> = <a class="code" href="dxf__parse_8cpp.html#a5e871b631440734aebde34a0665b5e36">ycoords</a>[0], e.<a class="code" href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a2b024b762b4b5bbc53590f29b815a818">z0</a> = <a class="code" href="dxf__parse_8cpp.html#ad3de777f569e331efcf1569f364fff65">zcoords</a>[0];</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        e.<a class="code" href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a650630ce22b5f3254d30d40020532116">x1</a> = <a class="code" href="dxf__parse_8cpp.html#a877528f74a7c86a3b4ce4447999774b0">xcoords</a>[1], e.<a class="code" href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a1948d6ab8758e90330b5b64b192dbf65">y1</a> = <a class="code" href="dxf__parse_8cpp.html#a5e871b631440734aebde34a0665b5e36">ycoords</a>[1], e.<a class="code" href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a62dc63b1dd9eb7cc8e500acdfd9f687d">z1</a> = <a class="code" href="dxf__parse_8cpp.html#ad3de777f569e331efcf1569f364fff65">zcoords</a>[1];</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        items-&gt;push_back (e);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">//debug (&quot;DXF LD: LINE &lt;%g %g %g&gt; &lt;%g %g %g&gt;&quot;, </span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//  xcoords[0], ycoords[0], zcoords[0], xcoords[1], ycoords[1], zcoords[1]);</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;POINT&quot;</span>)) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// an itty, bitty sphere!</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">//debug (&quot;DXF LD: POINT &lt;%g %g %g&gt;&quot;,  </span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">//  xcoords[0], ycoords[0], zcoords[0]);</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;CIRCLE&quot;</span>)) {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="comment">// a VERY short cylinder!</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">//debug (&quot;DXF LD: CIRCLE &lt;%g %g %g&gt; &lt;%g&gt;&quot;, xcoords[0], ycoords[0], zcoords[0], floats[0]);</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    }</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;ARC&quot;</span>)) {</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">// not implemented for now</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;TRACE&quot;</span>)) {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="comment">// 2 back-to-back triangles</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="comment">//debug (&quot;DXF LD: TRACE &lt;%g %g %g&gt; &lt;%g %g %g&gt; &lt;%g %g %g&gt; &lt;%g %g %g&gt;&quot;, </span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="comment">//  xcoords[0], ycoords[0], zcoords[0], xcoords[1], ycoords[1], zcoords[1], xcoords[2], ycoords[2], zcoords[2], xcoords[3], ycoords[3], zcoords[3]);</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;SOLID&quot;</span>)) {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="comment">// 1 or 2 triangles</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="comment">//debug (&quot;DXF LD: SOLID &lt;%g %g %g&gt; &lt;%g %g %g&gt; &lt;%g %g %g&gt; &lt;%g %g %g&gt;&quot;, </span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="comment">//  xcoords[0], ycoords[0], zcoords[0], xcoords[1], ycoords[1], zcoords[1], xcoords[2], ycoords[2], zcoords[2], xcoords[3], ycoords[3], zcoords[3]);</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;TEXT&quot;</span>)) {  </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="comment">// not implemented for now</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;SHAPE&quot;</span>)) {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// these look very hard</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;BLOCK&quot;</span>)) {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="comment">// these look very hard</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;ENDBLK&quot;</span>)) {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="comment">// these look very hard</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;INSERT&quot;</span>)) {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        <span class="comment">// these look very hard</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;ATTDEF&quot;</span>)) {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="comment">// not implemented for now</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;ATTRIB&quot;</span>)) {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// not implemented for now</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;POLYLINE&quot;</span>)) {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="comment">// these look fairly hard</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;VERTEX&quot;</span>)) {</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="comment">// these look fairly hard</span></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;SEQEND&quot;</span>)) {</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="comment">// these look fairly hard</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;3DLINE&quot;</span>)) {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="comment">// a VERY skinny triangle!</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">//debug (&quot;DXF LD: 3DLINE &lt;%g %g %g&gt; &lt;%g %g %g&gt;&quot;, </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="comment">//  xcoords[0], ycoords[0], zcoords[0], xcoords[1], ycoords[1], zcoords[1]);</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    }</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;3DFACE&quot;</span>)) {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="comment">// 1 or 2 triangles</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="comment">//debug (&quot;DXF LD: 3DFACE &lt;%g %g %g&gt; &lt;%g %g %g&gt; &lt;%g %g %g&gt; &lt;%g %g %g&gt;&quot;, </span></div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="comment">//  xcoords[0], ycoords[0], zcoords[0], xcoords[1], ycoords[1], zcoords[1], xcoords[2], ycoords[2], zcoords[2], xcoords[3], ycoords[3], zcoords[3]);</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    }</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(curobj, <span class="stringliteral">&quot;DIMENSION&quot;</span>)) {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">// not implemented for now</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span>; <span class="comment">// no current object defined...</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
+<div class="line"><a name="l00135"></a><span class="lineno"><a class="line" href="dxf__parse_8h.html#afad355d565892614680f02e749174a1a">  135</a></span>&#160;<span class="keywordtype">int</span> <a class="code" href="dxf__parse_8cpp.html#afad355d565892614680f02e749174a1a">load_dxf</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> *file_name, vector&lt;DXF_ENTITY_ITEM&gt; *items)</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;{</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    FILE *infile;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordflow">if</span> (!(infile = fopen(file_name, <span class="stringliteral">&quot;r&quot;</span>))) {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        TRACE (<span class="stringliteral">&quot;DXF LD: Cannot open input file %s!&quot;</span>, file_name);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">char</span> curobj[80] = <span class="stringliteral">&quot;&quot;</span>;   <span class="comment">// not working on any object currently</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">int</span> curcolor = 7;       <span class="comment">// and it also doesn&#39;t have a color yet...</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;find:   </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordflow">while</span> (!feof(infile)) {</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="comment">// run file up to the &quot;ENTITIES&quot; section</span></div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordtype">char</span> linbuf[<a class="code" href="dxf__parse_8cpp.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>];</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordtype">int</span> groupcode = <a class="code" href="dxf__parse_8cpp.html#a234219fdd9f9da093b7c77e020778ae9">getline</a>(infile, linbuf, <a class="code" href="dxf__parse_8cpp.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>);</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        <span class="keywordflow">if</span> (groupcode &lt; 0) {        </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="comment">// get a group code and a line</span></div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">goto</span> stopit;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode == 0) {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="comment">// file section mark</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="keywordflow">if</span> (strstr(linbuf, <span class="stringliteral">&quot;EOF&quot;</span>)) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                <span class="keywordflow">goto</span> stopit;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            }</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span> (strstr(linbuf, <span class="stringliteral">&quot;SECTION&quot;</span>)) {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="keywordtype">char</span> linbuf[<a class="code" href="dxf__parse_8cpp.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>];</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="keywordtype">int</span> groupcode = <a class="code" href="dxf__parse_8cpp.html#a234219fdd9f9da093b7c77e020778ae9">getline</a>(infile, linbuf, <a class="code" href="dxf__parse_8cpp.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                <span class="keywordflow">if</span> (groupcode &lt; 0) {        </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                    <span class="keywordflow">goto</span> stopit;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                }</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode != 2) {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                }</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keywordflow">else</span> <span class="keywordflow">if</span> (strstr(linbuf, <span class="stringliteral">&quot;ENTITIES&quot;</span>)) {</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                    <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">while</span> (!feof(infile)) {     </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="comment">// scan ENTITIES section</span></div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <span class="keywordtype">char</span> linbuf[<a class="code" href="dxf__parse_8cpp.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>];</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <span class="keywordtype">int</span> groupcode = <a class="code" href="dxf__parse_8cpp.html#a234219fdd9f9da093b7c77e020778ae9">getline</a>(infile, linbuf, <a class="code" href="dxf__parse_8cpp.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a>);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;        <span class="keywordflow">if</span> (groupcode &lt; 0) {        </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="comment">// get a group code and a line</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">goto</span> stopit;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode &lt; 10) {  </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="comment">// cardinal group codes</span></div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            <span class="keywordflow">switch</span>(groupcode) {</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keywordflow">case</span> 0: <span class="comment">// start of entity, table, file sep</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;                <span class="keywordflow">if</span> (strstr(linbuf, <span class="stringliteral">&quot;EOF&quot;</span>)) {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;                    <a class="code" href="dxf__parse_8cpp.html#a3c31bf02e47266d9bfc29a138f1b6d32">writeobj</a>(items, curobj); <span class="comment">// dump object</span></div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;                    <span class="keywordflow">goto</span> stopit;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                }</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="keywordflow">if</span> (strstr(linbuf, <span class="stringliteral">&quot;ENDSEC&quot;</span>)) {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                    <a class="code" href="dxf__parse_8cpp.html#a3c31bf02e47266d9bfc29a138f1b6d32">writeobj</a>(items, curobj); <span class="comment">// dump object</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                    <span class="keywordflow">goto</span> find;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                <a class="code" href="dxf__parse_8cpp.html#a3c31bf02e47266d9bfc29a138f1b6d32">writeobj</a>(items, curobj);    <span class="comment">// dump old object</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                curobj[0] = <span class="charliteral">&#39;\0&#39;</span>; <span class="comment">// reset object</span></div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                curcolor = 7;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                strcpy(curobj, linbuf); <span class="comment">// get new</span></div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordflow">case</span> 1: <span class="comment">// primary text value for entity (?)*/</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">case</span> 2: <span class="comment">// block name, attribute tag, etc</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keywordflow">case</span> 3: <span class="comment">// other names</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;            <span class="keywordflow">case</span> 4:</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <span class="keywordflow">case</span> 5: <span class="comment">// entity handle (hex string)</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">case</span> 6: <span class="comment">// line type name</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keywordflow">case</span> 7: <span class="comment">// text style name</span></div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordflow">case</span> 8: <span class="comment">// layer name</span></div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordflow">case</span> 9: <span class="comment">// variable name ID (only in header)*/</span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            }</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;        }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode &gt;= 10 &amp;&amp; groupcode &lt; 19) {</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="comment">// Some X coord</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            sscanf(linbuf, <span class="stringliteral">&quot;%f&quot;</span>, &amp;(<a class="code" href="dxf__parse_8cpp.html#a877528f74a7c86a3b4ce4447999774b0">xcoords</a>[groupcode-10]));</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode &gt;= 20 &amp;&amp; groupcode &lt; 29) {</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="comment">// Some Y coord</span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            sscanf(linbuf, <span class="stringliteral">&quot;%f&quot;</span>, &amp;(<a class="code" href="dxf__parse_8cpp.html#a5e871b631440734aebde34a0665b5e36">ycoords</a>[groupcode-20]));</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode &gt;= 30 &amp;&amp; groupcode &lt; 38) {</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="comment">// Some Z coord</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            sscanf(linbuf, <span class="stringliteral">&quot;%f&quot;</span>, &amp;(<a class="code" href="dxf__parse_8cpp.html#ad3de777f569e331efcf1569f364fff65">zcoords</a>[groupcode-30]));</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        }</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode == 38) {</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="comment">// entity elevation if nonzero</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        }</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode == 39) {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <span class="comment">// entity thickness if nonzero</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;        }</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode &gt;= 40 &amp;&amp; groupcode &lt; 49) {</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="comment">// misc floats</span></div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            sscanf(linbuf, <span class="stringliteral">&quot;%f&quot;</span>, &amp;(<a class="code" href="dxf__parse_8cpp.html#acba380858ef541a35cc9c8b5e5c13464">floats</a>[groupcode-40]));</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode == 49) {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="comment">// repeated value groups</span></div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        }</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode &gt;= 50 &amp;&amp; groupcode &lt; 59) {</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            <span class="comment">// misc angles</span></div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            sscanf(linbuf, <span class="stringliteral">&quot;%f&quot;</span>, &amp;(<a class="code" href="dxf__parse_8cpp.html#a65edb588a314a9ded0f63cb15cb9d394">angles</a>[groupcode-50]));</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        }</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode == 62) {</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            <span class="comment">// Color number</span></div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            sscanf(linbuf, <span class="stringliteral">&quot;%6d&quot;</span>, &amp;curcolor);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        }</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode == 66) {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="comment">// &quot;entities follow&quot; flag</span></div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        }</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode &gt;= 70 &amp;&amp; groupcode &lt; 79) {</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="comment">// misc ints</span></div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            sscanf(linbuf, <span class="stringliteral">&quot;%d&quot;</span>, &amp;(<a class="code" href="dxf__parse_8cpp.html#a53605ccbcd60d7047ac41d9f7c8b25aa">ints</a>[groupcode-70]));</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (groupcode == 210 || groupcode == 220 || groupcode == 230) {    </div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="comment">// X, Y, Z components of extrusion direction</span></div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;stopit: </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;}</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;</div>
+<div class="ttc" id="struct_d_x_f___e_n_t_i_t_y___i_t_e_m_html_a1948d6ab8758e90330b5b64b192dbf65"><div class="ttname"><a href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a1948d6ab8758e90330b5b64b192dbf65">DXF_ENTITY_ITEM::y1</a></div><div class="ttdeci">double y1</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8h_source.html#l00017">dxf_parse.h:17</a></div></div>
+<div class="ttc" id="dxf__parse_8cpp_html_a877528f74a7c86a3b4ce4447999774b0"><div class="ttname"><a href="dxf__parse_8cpp.html#a877528f74a7c86a3b4ce4447999774b0">xcoords</a></div><div class="ttdeci">static float xcoords[10]</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8cpp_source.html#l00011">dxf_parse.cpp:11</a></div></div>
+<div class="ttc" id="dxf__parse_8h_html_aa2b22a1ff8d505680df7678a8b47def8a91c037739f9e08e44a2988367bd27579"><div class="ttname"><a href="dxf__parse_8h.html#aa2b22a1ff8d505680df7678a8b47def8a91c037739f9e08e44a2988367bd27579">ET_LINE</a></div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8h_source.html#l00008">dxf_parse.h:8</a></div></div>
+<div class="ttc" id="dxf__parse_8cpp_html_a53605ccbcd60d7047ac41d9f7c8b25aa"><div class="ttname"><a href="dxf__parse_8cpp.html#a53605ccbcd60d7047ac41d9f7c8b25aa">ints</a></div><div class="ttdeci">static int ints[10]</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8cpp_source.html#l00013">dxf_parse.cpp:13</a></div></div>
+<div class="ttc" id="stdafx_8h_html"><div class="ttname"><a href="stdafx_8h.html">stdafx.h</a></div></div>
+<div class="ttc" id="dxf__parse_8h_html"><div class="ttname"><a href="dxf__parse_8h.html">dxf_parse.h</a></div></div>
+<div class="ttc" id="struct_d_x_f___e_n_t_i_t_y___i_t_e_m_html_a62dc63b1dd9eb7cc8e500acdfd9f687d"><div class="ttname"><a href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a62dc63b1dd9eb7cc8e500acdfd9f687d">DXF_ENTITY_ITEM::z1</a></div><div class="ttdeci">double z1</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8h_source.html#l00017">dxf_parse.h:17</a></div></div>
+<div class="ttc" id="dxf__parse_8cpp_html_a234219fdd9f9da093b7c77e020778ae9"><div class="ttname"><a href="dxf__parse_8cpp.html#a234219fdd9f9da093b7c77e020778ae9">getline</a></div><div class="ttdeci">int getline(FILE *infile, char linbuf[BUFSIZE], int buf_size)</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8cpp_source.html#l00016">dxf_parse.cpp:16</a></div></div>
+<div class="ttc" id="struct_d_x_f___e_n_t_i_t_y___i_t_e_m_html_a7f0b6213761ff8cd3dde6aa02066df48"><div class="ttname"><a href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a7f0b6213761ff8cd3dde6aa02066df48">DXF_ENTITY_ITEM::type</a></div><div class="ttdeci">eEntityType type</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8h_source.html#l00015">dxf_parse.h:15</a></div></div>
+<div class="ttc" id="dxf__parse_8cpp_html_afad355d565892614680f02e749174a1a"><div class="ttname"><a href="dxf__parse_8cpp.html#afad355d565892614680f02e749174a1a">load_dxf</a></div><div class="ttdeci">int load_dxf(const char *file_name, vector&lt; DXF_ENTITY_ITEM &gt; *items)</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8cpp_source.html#l00135">dxf_parse.cpp:135</a></div></div>
+<div class="ttc" id="dxf__parse_8cpp_html_a65edb588a314a9ded0f63cb15cb9d394"><div class="ttname"><a href="dxf__parse_8cpp.html#a65edb588a314a9ded0f63cb15cb9d394">angles</a></div><div class="ttdeci">static float angles[10]</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8cpp_source.html#l00012">dxf_parse.cpp:12</a></div></div>
+<div class="ttc" id="dxf__parse_8cpp_html_acba380858ef541a35cc9c8b5e5c13464"><div class="ttname"><a href="dxf__parse_8cpp.html#acba380858ef541a35cc9c8b5e5c13464">floats</a></div><div class="ttdeci">static float floats[10]</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8cpp_source.html#l00012">dxf_parse.cpp:12</a></div></div>
+<div class="ttc" id="dxf__parse_8cpp_html_a3c31bf02e47266d9bfc29a138f1b6d32"><div class="ttname"><a href="dxf__parse_8cpp.html#a3c31bf02e47266d9bfc29a138f1b6d32">writeobj</a></div><div class="ttdeci">void writeobj(vector&lt; DXF_ENTITY_ITEM &gt; *items, char curobj[80])</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8cpp_source.html#l00035">dxf_parse.cpp:35</a></div></div>
+<div class="ttc" id="struct_d_x_f___e_n_t_i_t_y___i_t_e_m_html_a650630ce22b5f3254d30d40020532116"><div class="ttname"><a href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a650630ce22b5f3254d30d40020532116">DXF_ENTITY_ITEM::x1</a></div><div class="ttdeci">double x1</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8h_source.html#l00017">dxf_parse.h:17</a></div></div>
+<div class="ttc" id="dxf__parse_8cpp_html_aeca034f67218340ecb2261a22c2f3dcd"><div class="ttname"><a href="dxf__parse_8cpp.html#aeca034f67218340ecb2261a22c2f3dcd">BUFSIZE</a></div><div class="ttdeci">#define BUFSIZE</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8cpp_source.html#l00008">dxf_parse.cpp:8</a></div></div>
+<div class="ttc" id="struct_d_x_f___e_n_t_i_t_y___i_t_e_m_html_a935c060a6afc24e6963c31833356078a"><div class="ttname"><a href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a935c060a6afc24e6963c31833356078a">DXF_ENTITY_ITEM::x0</a></div><div class="ttdeci">double x0</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8h_source.html#l00016">dxf_parse.h:16</a></div></div>
+<div class="ttc" id="struct_d_x_f___e_n_t_i_t_y___i_t_e_m_html_a2b024b762b4b5bbc53590f29b815a818"><div class="ttname"><a href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a2b024b762b4b5bbc53590f29b815a818">DXF_ENTITY_ITEM::z0</a></div><div class="ttdeci">double z0</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8h_source.html#l00016">dxf_parse.h:16</a></div></div>
+<div class="ttc" id="struct_d_x_f___e_n_t_i_t_y___i_t_e_m_html_a5ddb3d9be861ae08ccd259c0431f804a"><div class="ttname"><a href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a5ddb3d9be861ae08ccd259c0431f804a">DXF_ENTITY_ITEM::y0</a></div><div class="ttdeci">double y0</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8h_source.html#l00016">dxf_parse.h:16</a></div></div>
+<div class="ttc" id="struct_d_x_f___e_n_t_i_t_y___i_t_e_m_html"><div class="ttname"><a href="struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html">DXF_ENTITY_ITEM</a></div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8h_source.html#l00014">dxf_parse.h:14</a></div></div>
+<div class="ttc" id="dxf__parse_8cpp_html_a5e871b631440734aebde34a0665b5e36"><div class="ttname"><a href="dxf__parse_8cpp.html#a5e871b631440734aebde34a0665b5e36">ycoords</a></div><div class="ttdeci">static float ycoords[10]</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8cpp_source.html#l00011">dxf_parse.cpp:11</a></div></div>
+<div class="ttc" id="dxf__parse_8cpp_html_ad3de777f569e331efcf1569f364fff65"><div class="ttname"><a href="dxf__parse_8cpp.html#ad3de777f569e331efcf1569f364fff65">zcoords</a></div><div class="ttdeci">static float zcoords[10]</div><div class="ttdef"><b>Definition:</b> <a href="dxf__parse_8cpp_source.html#l00011">dxf_parse.cpp:11</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9919179e432798222cc4a525897a83ee.html">RobotSimulator</a></li><li class="navelem"><a class="el" href="dir_5b3ce41fc6dfa65445c9be191f166a36.html">test</a></li><li class="navelem"><a class="el" href="dir_06cded7edbda7e78bf677bcd5b78cc89.html">robot_society</a></li><li class="navelem"><a class="el" href="dir_05ef4318fc9e3da04538da5d2600d340.html">robot society beta</a></li><li class="navelem"><a class="el" href="dir_9131b47c6b1fd4b6b2bb962bead154e7.html">Common</a></li><li class="navelem"><a class="el" href="dxf__parse_8cpp.html">dxf_parse.cpp</a></li>
+    <li class="footer">생성시간 : 화 1월 27 2015 15:58:10, 프로젝트명 : Test, 생성자 : 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
+  </ul>
+</div>
+</body>
+</html>

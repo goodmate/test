@@ -1,0 +1,105 @@
+.TH "D:/RobotSimulator/test/robot_society/robot society beta/basic_function.h" 3 "화 1월 27 2015" "Version Ver 1.0.0" "Test" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/RobotSimulator/test/robot_society/robot society beta/basic_function.h \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'StdAfx\&.h'\fP
+.br
+\fC#include <math\&.h>\fP
+.br
+
+.SS "함수"
+
+.in +1c
+.ti -1c
+.RI "double \fBGet_Length\fP (double x1, double y1, double x2, double y2)"
+.br
+.ti -1c
+.RI "double \fBGet_Length\fP (CPoint p1, CPoint p2)"
+.br
+.ti -1c
+.RI "bool \fBisPercent\fP (int p)"
+.br
+.ti -1c
+.RI "int \fBisRandom\fP (int fr, int to)"
+.br
+.ti -1c
+.RI "double \fB_Deg\fP (double t)"
+.br
+.in -1c
+.SH "함수 문서화"
+.PP 
+.SS "double _Deg (double t)"
+
+.PP
+basic_function\&.cpp 파일의 32 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+33 {
+34     double r = t;
+35     while(1)
+36     {
+37         if(t>360)
+38             t -= 360;
+39         else if(t<0)
+40             t += 360;
+41         else
+42             break;
+43     }
+44     return r;
+45 }
+.fi
+.SS "double Get_Length (double x1, double y1, double x2, double y2)"
+
+.PP
+basic_function\&.cpp 파일의 4 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+5 {
+6     return sqrt( (x1-x2)*(x1-x2) + (y1-y2)*(y1-y2) );
+7 }
+.fi
+.SS "double Get_Length (CPoint p1, CPoint p2)"
+
+.PP
+basic_function\&.cpp 파일의 9 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+10 {
+11     return Get_Length(p1\&.x, p1\&.y, p2\&.x, p2\&.y);
+12 }
+.fi
+.SS "bool isPercent (int p)"
+
+.PP
+basic_function\&.cpp 파일의 14 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+15 {//p % 확률로 true를 return한다\&.
+16     int n = rand() % 101;   //0~100까지
+17 
+18     if(p >= n)  return TRUE;
+19     else        return FALSE;
+20 }
+.fi
+.SS "int isRandom (int fr, int to)"
+
+.PP
+basic_function\&.cpp 파일의 22 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+23 {//fr~to사이의 값을 랜덤하게\&. 
+24     int diff = to - fr + 1;
+25     int r_zero2diff = rand() % diff;
+26     int r = fr + r_zero2diff;
+27     if(r >= to) return to;
+28     if(r <= fr) return fr;  
+29     return r;   
+30 }
+.fi
+.SH "작성자"
+.PP 
+소스 코드로부터 Test를 위해 Doxygen에 의해 자동으로 생성됨\&.

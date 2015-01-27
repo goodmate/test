@@ -1,0 +1,1113 @@
+.TH "CrobotsocietybetaDlg" 3 "화 1월 27 2015" "Version Ver 1.0.0" "Test" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+CrobotsocietybetaDlg \- 
+.SH SYNOPSIS
+.br
+.PP
+.PP
+\fC#include <robot society betaDlg\&.h>\fP
+.PP
+CDialog를(을) 상속했습니다\&.
+.SS "Public 타입"
+
+.in +1c
+.ti -1c
+.RI "enum { \fBIDD\fP = IDD_ROBOTSOCIETYBETA_DIALOG }"
+.br
+.in -1c
+.SS "Public 멤버 함수"
+
+.in +1c
+.ti -1c
+.RI "\fBCrobotsocietybetaDlg\fP (CWnd *pParent=NULL)"
+.br
+.ti -1c
+.RI "void \fBDrawCircle\fP (CDC *pDC, CPoint point, int radius)"
+.br
+.ti -1c
+.RI "void \fBDrawCircle\fP (CDC *pDC, CBrush *brush, CPoint point, int radius)"
+.br
+.ti -1c
+.RI "void \fBDrawCircle\fP (CDC *pDC, CPoint point, double radius)"
+.br
+.ti -1c
+.RI "void \fBDrawCircle\fP (CDC *pDC, CBrush *brush, CPoint point, double radius)"
+.br
+.ti -1c
+.RI "CPoint \fBPointThetaShift\fP (CPoint point, double distance, double theta)"
+.br
+.ti -1c
+.RI "CPoint \fB_P\fP (CPoint p)"
+.br
+.ti -1c
+.RI "int \fB_X\fP (double x)"
+.br
+.ti -1c
+.RI "int \fB_Y\fP (double y)"
+.br
+.ti -1c
+.RI "int \fB_X\fP (int x)"
+.br
+.ti -1c
+.RI "int \fB_Y\fP (int y)"
+.br
+.ti -1c
+.RI "CPoint \fB_iP\fP (CPoint p)"
+.br
+.ti -1c
+.RI "int \fB_iX\fP (double x)"
+.br
+.ti -1c
+.RI "int \fB_iY\fP (double y)"
+.br
+.ti -1c
+.RI "int \fB_iX\fP (int x)"
+.br
+.ti -1c
+.RI "int \fB_iY\fP (int y)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnMouseMove\fP (\fBUINT\fP nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "afx_msg BOOL \fBOnMouseWheel\fP (\fBUINT\fP nFlags, short zDelta, CPoint pt)"
+.br
+.ti -1c
+.RI "virtual BOOL \fBPreTranslateMessage\fP (MSG *pMsg)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnTimer\fP (UINT_PTR nIDEvent)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnBnClickedStartStop\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnBnClickedReset\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnRButtonDown\fP (\fBUINT\fP nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnLButtonDown\fP (\fBUINT\fP nFlags, CPoint point)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnNMCustomdrawSliderSpeed\fP (NMHDR *pNMHDR, LRESULT *pResult)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnBnClickedOpenStatus\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnBnClickedButtonLoadMap\fP ()"
+.br
+.RI "\fIaddtion funtion \fP"
+.in -1c
+.SS "Public 속성"
+
+.in +1c
+.ti -1c
+.RI "CPoint \fBpoint_lclk\fP"
+.br
+.ti -1c
+.RI "CPoint \fBpoint_rclk\fP"
+.br
+.ti -1c
+.RI "\fBROBOT_OBJECTS\fP \fBrobot_hander\fP"
+.br
+.ti -1c
+.RI "\fBROBOT_STATUS\fP * \fBrobot_status_dlg\fP"
+.br
+.ti -1c
+.RI "bool \fBm_bStatusDlg\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_offset_x\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_offset_y\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_top\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_btm\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_right\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_left\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_w\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_h\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_view_offset_x\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_view_offset_y\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_view_center_x\fP"
+.br
+.ti -1c
+.RI "int \fBstage1_view_center_Y\fP"
+.br
+.ti -1c
+.RI "double \fBstage1_view_zoom\fP"
+.br
+.ti -1c
+.RI "CPoint \fBm_pMousePt\fP"
+.br
+.ti -1c
+.RI "bool \fBm_bIsRun\fP"
+.br
+.ti -1c
+.RI "int \fBm_nDrawCnt\fP"
+.br
+.ti -1c
+.RI "CPoint \fBm_pDraw\fP [100]"
+.br
+.ti -1c
+.RI "CSliderCtrl \fBm_SliderSpeed\fP"
+.br
+.ti -1c
+.RI "int \fBm_nSpeed\fP"
+.br
+.in -1c
+.SS "Protected 멤버 함수"
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBDoDataExchange\fP (CDataExchange *pDX)"
+.br
+.ti -1c
+.RI "virtual BOOL \fBOnInitDialog\fP ()"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnSysCommand\fP (\fBUINT\fP nID, LPARAM lParam)"
+.br
+.ti -1c
+.RI "afx_msg void \fBOnPaint\fP ()"
+.br
+.ti -1c
+.RI "afx_msg HCURSOR \fBOnQueryDragIcon\fP ()"
+.br
+.in -1c
+.SS "Protected 속성"
+
+.in +1c
+.ti -1c
+.RI "HICON \fBm_hIcon\fP"
+.br
+.in -1c
+.SH "상세한 설명"
+.PP 
+robot society betaDlg\&.h 파일의 14 번째 라인에서 정의되었습니다\&.
+.SH "멤버 열거형 문서화"
+.PP 
+.SS "anonymous enum"
+
+.PP
+\fB열거형 멤버\fP
+.in +1c
+.TP
+\fB\fIIDD \fP\fP
+.PP
+robot society betaDlg\&.h 파일의 21 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+21 { IDD = IDD_ROBOTSOCIETYBETA_DIALOG };
+.fi
+.SH "생성자 & 소멸자 문서화"
+.PP 
+.SS "CrobotsocietybetaDlg::CrobotsocietybetaDlg (CWnd * pParent = \fCNULL\fP)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 57 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+58     : CDialog(CrobotsocietybetaDlg::IDD, pParent)
+59     , point_lclk(0)
+60     , point_rclk(0)
+61     , m_nDrawCnt(0)
+62     , m_bIsRun(false)
+63     , m_nSpeed(6)
+64     , m_bStatusDlg(false)
+65 {
+66     m_hIcon = AfxGetApp()->LoadIcon(IDR_MAINFRAME);
+67 }
+.fi
+.SH "멤버 함수 문서화"
+.PP 
+.SS "CPoint CrobotsocietybetaDlg::_iP (CPoint p)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 363 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+364 {
+365     CPoint r;
+366     r\&.x = _iX(p\&.x);
+367     r\&.y = _iY(p\&.y);
+368     return r;
+369 }
+.fi
+.SS "int CrobotsocietybetaDlg::_iX (double x)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 339 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+340 {
+341     //return (int)(x*stage1_view_zoom + stage1_view_offset_x + stage1_w/2);
+342     return (int)((x-stage1_w/2-stage1_view_offset_x)/stage1_view_zoom);
+343 }
+.fi
+.SS "int CrobotsocietybetaDlg::_iX (int x)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 351 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+352 {
+353     double d = (double)x;
+354     return _iX(d);
+355 }
+.fi
+.SS "int CrobotsocietybetaDlg::_iY (double y)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 345 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+346 {
+347     //return (int)(stage1_h/2 - y*stage1_view_zoom + stage1_view_offset_y);
+348     return (int)(( stage1_h/2 - y + stage1_view_offset_y )/stage1_view_zoom );
+349 }
+.fi
+.SS "int CrobotsocietybetaDlg::_iY (int y)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 357 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+358 {
+359     double d = (double)y;
+360     return _iY(d);
+361 }
+.fi
+.SS "CPoint CrobotsocietybetaDlg::_P (CPoint p)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 331 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+332 {
+333     CPoint r;
+334     r\&.x = _X(p\&.x);
+335     r\&.y = _Y(p\&.y);
+336     return r;
+337 }
+.fi
+.SS "int CrobotsocietybetaDlg::_X (double x)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 309 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+310 {
+311     return (int)(x*stage1_view_zoom + stage1_view_offset_x + stage1_w/2);
+312 }
+.fi
+.SS "int CrobotsocietybetaDlg::_X (int x)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 319 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+320 {
+321     double d = (double)x;
+322     return _X(d);
+323 }
+.fi
+.SS "int CrobotsocietybetaDlg::_Y (double y)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 314 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+315 {
+316     return (int)(stage1_h/2 - y*stage1_view_zoom + stage1_view_offset_y);
+317 }
+.fi
+.SS "int CrobotsocietybetaDlg::_Y (int y)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 325 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+326 {
+327     double d = (double)y;
+328     return _Y(d);
+329 }
+.fi
+.SS "void CrobotsocietybetaDlg::DoDataExchange (CDataExchange * pDX)\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+robot society betaDlg\&.cpp 파일의 69 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+70 {
+71     CDialog::DoDataExchange(pDX);
+72     DDX_Control(pDX, IDC_SLIDER_SPEED, m_SliderSpeed);
+73 }
+.fi
+.SS "void CrobotsocietybetaDlg::DrawCircle (CDC * pDC, CPoint point, int radius)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 269 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+270 {
+271     pDC->Ellipse( _X((int)(point\&.x) - radius)
+272         , _Y((int)(point\&.y) - radius)
+273         , _X((int)(point\&.x) + radius)
+274         , _Y((int)(point\&.y) + radius) );
+275 }
+.fi
+.SS "void CrobotsocietybetaDlg::DrawCircle (CDC * pDC, CBrush * brush, CPoint point, int radius)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 277 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+278 {
+279     pDC->SelectObject(brush);
+280     DrawCircle(pDC, point, radius);
+281 }
+.fi
+.SS "void CrobotsocietybetaDlg::DrawCircle (CDC * pDC, CPoint point, double radius)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 283 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+284 {
+285     int radius = (int)d_radius;
+286     pDC->Ellipse( _X((int)(point\&.x) - radius)
+287         , _Y((int)(point\&.y) - radius)
+288         , _X((int)(point\&.x) + radius)
+289         , _Y((int)(point\&.y) + radius) );
+290 }
+.fi
+.SS "void CrobotsocietybetaDlg::DrawCircle (CDC * pDC, CBrush * brush, CPoint point, double radius)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 292 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+293 {
+294     int radius = (int)d_radius;
+295     pDC->SelectObject(brush);
+296     DrawCircle(pDC, point, radius);
+297 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnBnClickedButtonLoadMap ()"
+
+.PP
+addtion funtion 
+.PP
+\fB날짜:\fP
+.RS 4
+2012/07/02
+.RE
+.PP
+\fB작성자:\fP
+.RS 4
+LatinoHeat ( gamemyth99@gamil.com )
+.RE
+.PP
+\fB매개변수:\fP
+.RS 4
+\fIa\fP 정수형 변수 
+.br
+\fIb\fP 정수형 변수
+.RE
+.PP
+\fB반환값:\fP
+.RS 4
+더해진 값을 리턴
+.RE
+.PP
+\fB예외:\fP
+.RS 4
+\fI\fP .RE
+.PP
+
+.PP
+robot society betaDlg\&.cpp 파일의 671 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+672 {
+673     // TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다\&.
+674         CFileDialog fdlg(TRUE, "dxf", "*\&.dxf", OFN_FILEMUSTEXIST| OFN_HIDEREADONLY, 
+675         "Map Files (*\&.dxf)|*\&.dxf|All Files (*\&.*)|*\&.*||", this);
+676 
+677     if (IDOK == fdlg\&.DoModal ()) {
+678         CString fileName = fdlg\&.GetPathName ();
+679 
+680         strncpy (g_ini\&.map_file, (LPCSTR)fileName, MAX_PATH);
+681 
+682         _map_2d\&.clear();
+683         load_dxf ((LPCSTR)fileName, &_map_2d);
+684 
+685         // load_dxf() 함수로 읽어들인 맵 정보는 mm로 저장되어있다\&. 
+686         // 이 데이터를 m로 단위 변경한다\&.
+687         for (unsigned int i=0; i<_map_2d\&.size(); ++i) {
+688             _map_2d[i]\&.x0 *= 0\&.001;
+689             _map_2d[i]\&.y0 *= 0\&.001;
+690             _map_2d[i]\&.z0 *= 0\&.001;
+691             _map_2d[i]\&.x1 *= 0\&.001;
+692             _map_2d[i]\&.y1 *= 0\&.001;
+693             _map_2d[i]\&.z1 *= 0\&.001; 
+694         }
+695     }
+696 
+697 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnBnClickedOpenStatus ()"
+
+.PP
+robot society betaDlg\&.cpp 파일의 630 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+631 {
+632     // TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다\&.
+633     if(m_bStatusDlg )
+634     {
+635         m_bStatusDlg = FALSE;
+636         robot_status_dlg->DestroyWindow();
+637         //delete(robot_status_dlg);
+638     }
+639     else
+640     {
+641         m_bStatusDlg = TRUE;
+642         //delete(robot_status_dlg);
+643         //robot_status_dlg = new ROBOT_STATUS;
+644         //robot_status_dlg->status_hander = &robot_hander;
+645         robot_status_dlg->Create(IDD_STATUS_DIALOG, this);
+646         robot_status_dlg->ShowWindow(SW_SHOW);
+647     }
+648 
+649 
+650     UpdateData(TRUE);
+651 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnBnClickedReset ()"
+
+.PP
+robot society betaDlg\&.cpp 파일의 587 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+588 {
+589     // TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다\&.
+590     int curr_robot_count = robot_hander\&.robot_count;
+591     int max_robot_count = curr_robot_count + 100;
+592 
+593     if(max_robot_count>MAX_ROBOT_COUNT) max_robot_count = MAX_ROBOT_COUNT;
+594     //robot_hander\&.robot_count = max_robot_count;
+595 
+596     for(int i=curr_robot_count; i<max_robot_count; i++)
+597     {
+598         robot_hander\&.Add();
+599     }
+600     
+601     Invalidate();
+602 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnBnClickedStartStop ()"
+
+.PP
+robot society betaDlg\&.cpp 파일의 572 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+573 {
+574     // TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다\&.
+575     if(!m_bIsRun)
+576     {
+577         m_bIsRun = TRUE;
+578         //SetTimer(1, 10, NULL);        //10ms 주기
+579     }
+580     else
+581     {
+582         m_bIsRun = FALSE;
+583         //KillTimer(1);
+584     }
+585 }
+.fi
+.SS "BOOL CrobotsocietybetaDlg::OnInitDialog ()\fC [protected]\fP, \fC [virtual]\fP"
+
+.PP
+robot society betaDlg\&.cpp 파일의 96 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+97 {
+98     CDialog::OnInitDialog();
+99 
+100     // 시스템 메뉴에 "정보\&.\&.\&." 메뉴 항목을 추가합니다\&.
+101 
+102     // IDM_ABOUTBOX는 시스템 명령 범위에 있어야 합니다\&.
+103     ASSERT((IDM_ABOUTBOX & 0xFFF0) == IDM_ABOUTBOX);
+104     ASSERT(IDM_ABOUTBOX < 0xF000);
+105 
+106     CMenu* pSysMenu = GetSystemMenu(FALSE);
+107     if (pSysMenu != NULL)
+108     {
+109         CString strAboutMenu;
+110         strAboutMenu\&.LoadString(IDS_ABOUTBOX);
+111         if (!strAboutMenu\&.IsEmpty())
+112         {
+113             pSysMenu->AppendMenu(MF_SEPARATOR);
+114             pSysMenu->AppendMenu(MF_STRING, IDM_ABOUTBOX, strAboutMenu);
+115         }
+116     }
+117 
+118     // 이 대화 상자의 아이콘을 설정합니다\&. 응용 프로그램의 주 창이 대화 상자가 아닐 경우에는
+119     //  프레임워크가 이 작업을 자동으로 수행합니다\&.
+120     SetIcon(m_hIcon, TRUE);         // 큰 아이콘을 설정합니다\&.
+121     SetIcon(m_hIcon, FALSE);        // 작은 아이콘을 설정합니다\&.
+122 
+123     // TODO: 여기에 추가 초기화 작업을 추가합니다\&.
+124 
+125     load_dxf (g_ini\&.map_file, &_map_2d);
+126 
+127 
+128 
+129 
+130 
+131     robot_status_dlg = new ROBOT_STATUS;
+132     robot_status_dlg->status_hander = &robot_hander;
+133 
+134     RECT stage1_rect;
+135     CStatic *pictureBox = (CStatic *)GetDlgItem(IDC_STATIC_STAGE1);
+136     pictureBox->GetClientRect(&stage1_rect);
+137 
+138     stage1_offset_x = stage1_offset_y = 12;     //MFC Dialog 경계선
+139     //stage1_offset_x = stage1_offset_y = 0;    //MFC Dialog 경계선
+140 
+141     stage1_w        = stage1_rect\&.right;
+142     stage1_h        = stage1_rect\&.bottom;
+143 
+144     stage1_top      = stage1_rect\&.top + stage1_offset_y;
+145     stage1_btm      = stage1_rect\&.bottom + stage1_offset_y;
+146     stage1_right    = stage1_rect\&.right + stage1_offset_x;;
+147     stage1_left     = stage1_rect\&.left + stage1_offset_x;
+148     
+149 
+150 //  TRACE("top: %d", stage1_top);
+151 //  TRACE("btm: %d", stage1_btm);
+152 //  TRACE("right: %d", stage1_right);
+153 //  TRACE("left: %d", stage1_left);
+154 //  TRACE("Width: %d", stage1_w);
+155 //  TRACE("Height: %d", stage1_h);
+156 //  TRACE("end");
+157     
+158 
+159 
+160     stage1_view_offset_x = stage1_view_offset_y = 0;            //STAGE1에서 보여지는 offset
+161     stage1_view_center_x = stage1_view_center_Y = 0;
+162     stage1_view_zoom = 1\&.0;
+163 
+164 
+165     m_SliderSpeed\&.SetRange(1, 9);
+166     m_SliderSpeed\&.SetPos(m_nSpeed);
+167     
+168     
+169     SetTimer(1, 10, NULL);      //10ms 주기
+170     
+171 
+172     return TRUE;  // 포커스를 컨트롤에 설정하지 않으면 TRUE를 반환합니다\&.
+173 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnLButtonDown (\fBUINT\fP nFlags, CPoint point)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 412 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+413 {
+414     // TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다\&.
+415 
+416     TRACE("L btn down\r\n");
+417     point_lclk = CPoint(point\&.x-12, point\&.y-12);
+418 
+419 
+420     if(robot_status_dlg->m_bShowStatus\&.GetCheck())
+421     {
+422         for(int i=0; i<robot_hander\&.robot_count; i++)
+423         {
+424             //if(Get_Length(_iP(point_lclk), robot_hander\&.robots[i]\&.point) < robot_hander\&.robots[i]\&.body_radius)
+425             if(robot_hander\&.robots[i]\&.isMeet(_iP(point_lclk)))
+426             {
+427                 robot_status_dlg->AddStatus(1, robot_hander\&.Data(i));
+428                 TRACE("test1 \r\n");
+429             }
+430         }
+431     }
+432     else
+433     {
+434         robot_hander\&.Add(_iP(point_lclk));
+435     }
+436     
+437 
+438 
+439     Invalidate();
+440 
+441     CDialog::OnLButtonDown(nFlags, point);
+442 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnMouseMove (\fBUINT\fP nFlags, CPoint point)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 377 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+378 {
+379     // TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다\&.
+380     m_pMousePt\&.x = point\&.x - 12 ;
+381     m_pMousePt\&.y = point\&.y - 12 ;
+382     CDialog::OnMouseMove(nFlags, point);
+383 }
+.fi
+.SS "BOOL CrobotsocietybetaDlg::OnMouseWheel (\fBUINT\fP nFlags, short zDelta, CPoint pt)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 385 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+386 {
+387     // TODO:여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다\&.
+388     bool b = FALSE;
+389 
+390     if(m_pMousePt\&.x>=stage1_left && m_pMousePt\&.x<=stage1_right && m_pMousePt\&.y>=stage1_top && m_pMousePt\&.y<=stage1_btm)
+391     {
+392         if(zDelta>0)
+393         {
+394             stage1_view_zoom += 0\&.06;
+395             b = TRUE;
+396         }
+397         else
+398         {
+399             stage1_view_zoom -= 0\&.06;
+400             if(stage1_view_zoom<0\&.1) stage1_view_zoom = 0\&.1;
+401             b = TRUE;
+402         }
+403     }
+404     if(b)
+405     {
+406         Invalidate();
+407         return TRUE;
+408     }
+409     return CDialog::OnMouseWheel(nFlags, zDelta, pt);
+410 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnNMCustomdrawSliderSpeed (NMHDR * pNMHDR, LRESULT * pResult)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 606 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+607 {
+608     LPNMCUSTOMDRAW pNMCD = reinterpret_cast<LPNMCUSTOMDRAW>(pNMHDR);
+609     // TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다\&.
+610     static int prePos = 0;
+611     int nNewPos = m_SliderSpeed\&.GetPos();
+612 
+613     if(prePos != nNewPos)
+614     {
+615         prePos = nNewPos;
+616         m_nSpeed = m_SliderSpeed\&.GetRangeMax() - nNewPos + 1;
+617         m_SliderSpeed\&.SetPos(nNewPos);
+618         TRACE("슬라이더: %d\r\n", m_nSpeed);
+619 
+620         HWND hWnd = ::GetFocus();
+621         HWND NextWnd;
+622 
+623         NextWnd = ::GetNextDlgTabItem(m_hWnd, hWnd, TRUE);
+624         ::SetFocus(NextWnd);
+625     }
+626 
+627     *pResult = 0;
+628 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnPaint ()\fC [protected]\fP"
+
+.PP
+robot society betaDlg\&.cpp 파일의 192 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+193 {
+194     if (IsIconic())
+195     {
+196         CPaintDC dc(this); // 그리기를 위한 디바이스 컨텍스트
+197         SendMessage(WM_ICONERASEBKGND, reinterpret_cast<WPARAM>(dc\&.GetSafeHdc()), 0);
+198         // 클라이언트 사각형에서 아이콘을 가운데에 맞춥니다\&.
+199         int cxIcon = GetSystemMetrics(SM_CXICON);
+200         int cyIcon = GetSystemMetrics(SM_CYICON);
+201         CRect rect;
+202         GetClientRect(&rect);
+203         int x = (rect\&.Width() - cxIcon + 1) / 2;
+204         int y = (rect\&.Height() - cyIcon + 1) / 2;
+205 
+206         // 아이콘을 그립니다\&.
+207         dc\&.DrawIcon(x, y, m_hIcon);
+208     }
+209     else
+210     {
+211         CPaintDC dc(this);      // 그리기를 위한 디바이스 컨텍스트
+212         CRect rect;             // 클라이언트 영역의 크기
+213         CDC memDC;              // CDC for STAGE
+214         CBitmap imgBit;
+215         GetClientRect(&rect);   // 클라이언트 영역의 크기를 얻음    
+216         memDC\&.CreateCompatibleDC(&dc);
+217         imgBit\&.CreateCompatibleBitmap(&dc, rect\&.Width(), rect\&.Height());
+218         memDC\&.SelectObject(&imgBit); 
+219 
+220         CBrush brush_black(COLOR_D_BLACK);
+221         CBrush brush_lgreen(COLOR_L_GREEN);
+222         CBrush brush_lred(COLOR_L_RED);
+223         CBrush brush_lblue(COLOR_L_BLUE);
+224         CBrush brush_lpurple(COLOR_L_PURPLE);       
+225         CBrush brush_white(COLOR_WHITE);        
+226 
+227         
+228         //stage1 그리기
+229         //memDC\&.SelectObject(brush_black);
+230         memDC\&.SelectObject(brush_white);
+231         memDC\&.Rectangle(stage1_left, stage1_top, stage1_right, stage1_btm);
+232 
+233     
+234         //로봇들 그리기 
+235         for(int i=0; i<robot_hander\&.robot_count; i++)
+236         {
+237             CBrush brush_body(RGB(robot_hander\&.robots[i]\&.body_color\&.R, robot_hander\&.robots[i]\&.body_color\&.G, robot_hander\&.robots[i]\&.body_color\&.B));
+238             CBrush brush_head(RGB(robot_hander\&.robots[i]\&.head_color\&.R, robot_hander\&.robots[i]\&.head_color\&.G, robot_hander\&.robots[i]\&.head_color\&.B));
+239             DrawCircle(&memDC, &brush_body, robot_hander\&.robots[i]\&.point, robot_hander\&.robots[i]\&.body_radius);
+240             //DrawCircle(&memDC, &brush_head, PointThetaShift(robot_hander\&.robots[i]\&.point, robot_hander\&.robots[i]\&.body_radius+ robot_hander\&.robots[i]\&.neck_length, robot_hander\&.robots[i]\&.theta), robot_hander\&.robots[i]\&.head_radius);
+241 
+242 
+243         }
+244         
+245         for(int i=0; i<m_nDrawCnt; i++)
+246         {
+247             DrawCircle(&memDC, &brush_lred, m_pDraw[i], 10);
+248         }
+249 
+250         //더블 버퍼링
+251         dc\&.BitBlt(stage1_left, stage1_top, stage1_w, stage1_h, &memDC, 0, 0, SRCCOPY);           
+252         
+253         //메모리 반환
+254         memDC\&.DeleteDC();
+255         imgBit\&.DeleteObject();
+256 
+257         CDialog::OnPaint();
+258     }
+259 }
+.fi
+.SS "HCURSOR CrobotsocietybetaDlg::OnQueryDragIcon ()\fC [protected]\fP"
+
+.PP
+robot society betaDlg\&.cpp 파일의 263 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+264 {
+265     return static_cast<HCURSOR>(m_hIcon);
+266 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnRButtonDown (\fBUINT\fP nFlags, CPoint point)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 444 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+445 {
+446     // TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다\&.
+447 
+448     TRACE("R btn down\r\n");
+449     point_rclk = CPoint(point\&.x-12, point\&.y-12);
+450 
+451     for(int i=0; i<robot_hander\&.robot_count; i++)
+452     {
+453         //TRACE("(%\&.1f, %\&.1f) - (%\&.1f, %\&.1f) : ", (double)(_iP(m_pMousePt)\&.x), (double)(_iP(m_pMousePt)\&.y), (double)(robot_hander\&.robots[i]\&.point\&.x), (double)(robot_hander\&.robots[i]\&.point\&.y));
+454         //TRACE("거리:,%\&.1f   반지름: %\&.1f  \r\n",Get_Length(_iP(m_pMousePt), robot_hander\&.robots[i]\&.point), robot_hander\&.robots[i]\&.body_radius);
+455 
+456         //if(Get_Length(_iP(point_rclk), robot_hander\&.robots[i]\&.point) < robot_hander\&.robots[i]\&.body_radius)
+457         if(robot_hander\&.robots[i]\&.isMeet(_iP(point_rclk)))
+458         {
+459             robot_hander\&.Pop(i);
+460             TRACE("POP: %d \r\n", i);
+461         }
+462 
+463     }
+464 
+465     Invalidate();
+466 
+467     CDialog::OnRButtonDown(nFlags, point);
+468 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnSysCommand (\fBUINT\fP nID, LPARAM lParam)\fC [protected]\fP"
+
+.PP
+robot society betaDlg\&.cpp 파일의 175 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+176 {
+177     if ((nID & 0xFFF0) == IDM_ABOUTBOX)
+178     {
+179         CAboutDlg dlgAbout;
+180         dlgAbout\&.DoModal();
+181     }
+182     else
+183     {
+184         CDialog::OnSysCommand(nID, lParam);
+185     }
+186 }
+.fi
+.SS "void CrobotsocietybetaDlg::OnTimer (UINT_PTR nIDEvent)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 549 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+550 {
+551     // TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다\&.
+552     static int timer_count = 0;
+553 
+554     if(++timer_count >= m_nSpeed && m_bIsRun)
+555     {
+556         timer_count = 0;
+557 
+558         robot_hander\&.Localization(); //위치를 갱신한다\&. 
+559         robot_hander\&.Update();           //정보를 갱신한다\&. 
+560         
+561         Invalidate(FALSE);
+562     }
+563 
+564     if(m_bStatusDlg)
+565     {
+566         robot_status_dlg->Update();
+567     }
+568     
+569     CDialog::OnTimer(nIDEvent);
+570 }
+.fi
+.SS "CPoint CrobotsocietybetaDlg::PointThetaShift (CPoint point, double distance, double theta)"
+
+.PP
+robot society betaDlg\&.cpp 파일의 299 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+300 {
+301     CPoint point_return;
+302     
+303     point_return\&.x = point\&.x + (LONG)(distance*cos(theta));
+304     point_return\&.y = point\&.y + (LONG)(distance*sin(theta));
+305 
+306     return point_return;
+307 }
+.fi
+.SS "BOOL CrobotsocietybetaDlg::PreTranslateMessage (MSG * pMsg)\fC [virtual]\fP"
+
+.PP
+robot society betaDlg\&.cpp 파일의 469 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+470 {
+471     // TODO: 여기에 특수화된 코드를 추가 및/또는 기본 클래스를 호출합니다\&.
+472     bool r = FALSE;
+473     if(m_pMousePt\&.x>=stage1_left && m_pMousePt\&.x<=stage1_right && m_pMousePt\&.y>=stage1_top && m_pMousePt\&.y<=stage1_btm)
+474     {
+475         if(pMsg->message==WM_KEYDOWN)
+476         {
+477             TRACE("키가 눌렸다: %d \r\n", pMsg->wParam);
+478             switch(pMsg->wParam)
+479             {
+480             case 104:
+481             case VK_UP:
+482                 stage1_view_offset_y -= 25;
+483                 r = TRUE;
+484                 break;
+485             case 98:
+486             case VK_DOWN: 
+487                 stage1_view_offset_y += 25;
+488                 r = TRUE;
+489                 break;
+490             case 102:
+491             case VK_RIGHT:
+492                 stage1_view_offset_x += 25;
+493                 r = TRUE;
+494                 break;
+495             case 100:
+496             case VK_LEFT: 
+497                 stage1_view_offset_x -= 25;
+498                 r = TRUE;
+499                 break;
+500 
+501             case 97:    //down left
+502                 stage1_view_offset_x -= 20;
+503                 stage1_view_offset_y += 20;
+504                 r = TRUE;
+505                 break;
+506             case 99:    //down right
+507                 stage1_view_offset_x += 20;
+508                 stage1_view_offset_y += 20;
+509                 r = TRUE;
+510                 break;
+511             case 103:   //up left
+512                 stage1_view_offset_x -= 20;
+513                 stage1_view_offset_y -= 20;
+514                 r = TRUE;
+515                 break;
+516             case 105:   //up right
+517                 stage1_view_offset_x += 20;
+518                 stage1_view_offset_y -= 20;
+519                 r = TRUE;
+520                 break;
+521 
+522             case 107:   //zoom up
+523                 stage1_view_zoom += 0\&.06;
+524                 r = TRUE;
+525                 break;
+526             case 109:   //zoom down
+527                 stage1_view_zoom -= 0\&.06;
+528                 if(stage1_view_zoom<0\&.1) stage1_view_zoom = 0\&.1;
+529                 r = TRUE;
+530                 break;
+531 
+532             case 101:   //원상태로 
+533                 stage1_view_offset_x = 0;
+534                 stage1_view_offset_y = 0;
+535                 r = TRUE;
+536                 break;
+537             }
+538             if(r)
+539             {
+540                 Invalidate(FALSE);
+541                 return TRUE;
+542             }   
+543         }
+544     }
+545     return CDialog::PreTranslateMessage(pMsg);
+546 }
+.fi
+.SH "멤버 데이타 문서화"
+.PP 
+.SS "bool CrobotsocietybetaDlg::m_bIsRun"
+
+.PP
+robot society betaDlg\&.h 파일의 70 번째 라인에서 정의되었습니다\&.
+.SS "bool CrobotsocietybetaDlg::m_bStatusDlg"
+
+.PP
+robot society betaDlg\&.h 파일의 49 번째 라인에서 정의되었습니다\&.
+.SS "HICON CrobotsocietybetaDlg::m_hIcon\fC [protected]\fP"
+
+.PP
+robot society betaDlg\&.h 파일의 29 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::m_nDrawCnt"
+
+.PP
+robot society betaDlg\&.h 파일의 73 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::m_nSpeed"
+
+.PP
+robot society betaDlg\&.h 파일의 79 번째 라인에서 정의되었습니다\&.
+.SS "CPoint CrobotsocietybetaDlg::m_pDraw[100]"
+
+.PP
+robot society betaDlg\&.h 파일의 74 번째 라인에서 정의되었습니다\&.
+.SS "CPoint CrobotsocietybetaDlg::m_pMousePt"
+
+.PP
+robot society betaDlg\&.h 파일의 67 번째 라인에서 정의되었습니다\&.
+.SS "CSliderCtrl CrobotsocietybetaDlg::m_SliderSpeed"
+
+.PP
+robot society betaDlg\&.h 파일의 78 번째 라인에서 정의되었습니다\&.
+.SS "CPoint CrobotsocietybetaDlg::point_lclk"
+
+.PP
+robot society betaDlg\&.h 파일의 40 번째 라인에서 정의되었습니다\&.
+.SS "CPoint CrobotsocietybetaDlg::point_rclk"
+
+.PP
+robot society betaDlg\&.h 파일의 42 번째 라인에서 정의되었습니다\&.
+.SS "\fBROBOT_OBJECTS\fP CrobotsocietybetaDlg::robot_hander"
+
+.PP
+robot society betaDlg\&.h 파일의 45 번째 라인에서 정의되었습니다\&.
+.SS "\fBROBOT_STATUS\fP* CrobotsocietybetaDlg::robot_status_dlg"
+
+.PP
+robot society betaDlg\&.h 파일의 48 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_btm"
+
+.PP
+robot society betaDlg\&.h 파일의 60 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_h"
+
+.PP
+robot society betaDlg\&.h 파일의 61 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_left"
+
+.PP
+robot society betaDlg\&.h 파일의 60 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_offset_x"
+
+.PP
+robot society betaDlg\&.h 파일의 59 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_offset_y"
+
+.PP
+robot society betaDlg\&.h 파일의 59 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_right"
+
+.PP
+robot society betaDlg\&.h 파일의 60 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_top"
+
+.PP
+robot society betaDlg\&.h 파일의 60 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_view_center_x"
+
+.PP
+robot society betaDlg\&.h 파일의 63 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_view_center_Y"
+
+.PP
+robot society betaDlg\&.h 파일의 63 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_view_offset_x"
+
+.PP
+robot society betaDlg\&.h 파일의 62 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_view_offset_y"
+
+.PP
+robot society betaDlg\&.h 파일의 62 번째 라인에서 정의되었습니다\&.
+.SS "double CrobotsocietybetaDlg::stage1_view_zoom"
+
+.PP
+robot society betaDlg\&.h 파일의 64 번째 라인에서 정의되었습니다\&.
+.SS "int CrobotsocietybetaDlg::stage1_w"
+
+.PP
+robot society betaDlg\&.h 파일의 61 번째 라인에서 정의되었습니다\&.
+
+.SH "작성자"
+.PP 
+소스 코드로부터 Test를 위해 Doxygen에 의해 자동으로 생성됨\&.

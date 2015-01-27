@@ -1,13 +1,14 @@
 var indexSectionsWithContent =
 {
-  0: "_abcdeghilmnoprstuvw~",
-  1: "cprt",
-  2: "bprst",
-  3: "_acdgiloprsu~",
-  4: "bceghlmnprstuvw",
-  5: "cr",
-  6: "i",
-  7: "_bcdghimnprsuvw"
+  0: "_abcdefghilmnoprstuvwxyz~",
+  1: "cdprt",
+  2: "bdimprst",
+  3: "_abcdgiloprstuw~",
+  4: "_abcefghilmnprstuvwxyz",
+  5: "cdru",
+  6: "e",
+  7: "ei",
+  8: "_bcdghimnprsuvw"
 };
 
 var indexSectionNames =
@@ -18,8 +19,9 @@ var indexSectionNames =
   3: "functions",
   4: "variables",
   5: "typedefs",
-  6: "enumvalues",
-  7: "defines"
+  6: "enums",
+  7: "enumvalues",
+  8: "defines"
 };
 
 var indexSectionLabels =
@@ -30,7 +32,8 @@ var indexSectionLabels =
   3: "함수",
   4: "변수",
   5: "타입정의",
-  6: "열거형 멤버",
-  7: "매크로"
+  6: "열거형 타입",
+  7: "열거형 멤버",
+  8: "매크로"
 };
 

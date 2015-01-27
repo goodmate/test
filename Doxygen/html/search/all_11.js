@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['update',['Update',['../class_r_o_b_o_t___o_b_j_e_c_t_s.html#a1056f8c571a201e3463eca6cd5f5f3cd',1,'ROBOT_OBJECTS::Update()'],['../class_r_o_b_o_t___s_t_a_t_u_s.html#aad299f62c8743751fe33003ccbe5deec',1,'ROBOT_STATUS::Update()']]],
-  ['uwm_5fchecktext',['UWM_CHECKTEXT',['../class_c_scroll_edit.html#a01110ba0724a0ac7b1c3c8a454c308dc',1,'CScrollEdit']]],
-  ['uwm_5fchecktext_5fmsg',['UWM_CHECKTEXT_MSG',['../_scroll_edit_8cpp.html#a4ee80497067ec3a241ef2e44818b4c22',1,'ScrollEdit.cpp']]]
+  ['targetver_2eh',['targetver.h',['../targetver_8h.html',1,'']]],
+  ['theapp',['theApp',['../robot_01society_01beta_8cpp.html#a5e768add69e9c54c908959ab4ae8a7c9',1,'theApp():&#160;robot society beta.cpp'],['../robot_01society_01beta_8h.html#a5e768add69e9c54c908959ab4ae8a7c9',1,'theApp():&#160;robot society beta.cpp']]],
+  ['theta',['theta',['../class_p_u_p_p_e_t.html#a17f248828b3bc0cd6a2d873e9f0fc3d6',1,'PUPPET']]],
+  ['transfer',['Transfer',['../class_c_ini.html#a045d01fc8e14ca5b296428325492cfdc',1,'CIni::Transfer(bool bSave, const char *keyName, char *strData, DWORD nSize, char *defaultData=&quot;&quot;)'],['../class_c_ini.html#aa38fcded3b7197791b6de7706e2d5fe1',1,'CIni::Transfer(bool bSave, const char *keyName, bool &amp;boolData, bool defaultData=false)'],['../class_c_ini.html#a1325e04f3e1d1bd0b921f4bb3d943522',1,'CIni::Transfer(bool bSave, const char *keyName, int &amp;intData, int defaultData=0)'],['../class_c_ini.html#a47961ae191260c9ce400e9f60df8557c',1,'CIni::Transfer(bool bSave, const char *keyName, long &amp;longData, long defaultData=0)'],['../class_c_ini.html#a8a3de2065921dcd0d74f3858aab263d5',1,'CIni::Transfer(bool bSave, const char *keyName, DWORD &amp;dwordData, DWORD defaultData=0)'],['../class_c_ini.html#a00aab9d268679d7793da151a762ab8a5',1,'CIni::Transfer(bool bSave, const char *keyName, float &amp;floatData, float defaultData=0.0f)'],['../class_c_ini.html#a5df8c6dce613c6b46db86647642ca8ab',1,'CIni::Transfer(bool bSave, const char *keyName, double &amp;doubleData, double defaultData=0.0)']]],
+  ['trgb_5fdata',['tRGB_DATA',['../structt_r_g_b___d_a_t_a.html',1,'']]],
+  ['type',['type',['../struct_d_x_f___e_n_t_i_t_y___i_t_e_m.html#a7f0b6213761ff8cd3dde6aa02066df48',1,'DXF_ENTITY_ITEM::type()'],['../struct_c_h_a_r_a_c_t_o_r.html#aef2c37b8f18f1024e229578f35f50fe8',1,'CHARACTOR::type()']]]
 ];

@@ -3,6 +3,8 @@ var searchData=
   ['idb_5fopen_5fstatus',['IDB_OPEN_STATUS',['../resource_8h.html#a5521f1d57aa54f34c8effd1e4e2975ed',1,'resource.h']]],
   ['idb_5freset',['IDB_RESET',['../resource_8h.html#ac8241de69d3f92348e6fe633332515dd',1,'resource.h']]],
   ['idb_5fstart_5fstop',['IDB_START_STOP',['../resource_8h.html#a7021f9c664a1f0413aecc9ede6914af2',1,'resource.h']]],
+  ['idc_5fbutton1',['IDC_BUTTON1',['../resource_8h.html#acfb35c4efbc593430638b09db17f2870',1,'resource.h']]],
+  ['idc_5fbutton_5fload_5fmap',['IDC_BUTTON_LOAD_MAP',['../resource_8h.html#a6aa3dc4c199d97d01fa823fede19886c',1,'resource.h']]],
   ['idc_5fcheck_5fshow_5fstatus',['IDC_CHECK_SHOW_STATUS',['../resource_8h.html#aad5b782ab70db78117b7db92aabdaab0',1,'resource.h']]],
   ['idc_5fedit1',['IDC_EDIT1',['../resource_8h.html#ad123446cb35c803caf42a339fc842813',1,'resource.h']]],
   ['idc_5fedit2',['IDC_EDIT2',['../resource_8h.html#a4aae7cdb86571102c3b4483889b88c6f',1,'resource.h']]],

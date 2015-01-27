@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['reset',['Reset',['../class_p_u_p_p_e_t.html#ae9a389c6276bdcb0191bda256dbf9e6d',1,'PUPPET']]],
-  ['robot_5fobjects',['ROBOT_OBJECTS',['../class_r_o_b_o_t___o_b_j_e_c_t_s.html#ace6bf31483e80b648e372911f23b4af4',1,'ROBOT_OBJECTS']]],
-  ['robot_5fstatus',['ROBOT_STATUS',['../class_r_o_b_o_t___s_t_a_t_u_s.html#af5ff4f583af1ed6b0b837af304f50aee',1,'ROBOT_STATUS']]]
+  ['pointthetashift',['PointThetaShift',['../class_crobotsocietybeta_dlg.html#ab5c3b64ddf73bdc1fa199d49d3cba22e',1,'CrobotsocietybetaDlg']]],
+  ['pop',['Pop',['../class_r_o_b_o_t___o_b_j_e_c_t_s.html#afb27a6dd12159b8c463ea4c916fe1b81',1,'ROBOT_OBJECTS']]],
+  ['precreatewindow',['PreCreateWindow',['../class_c_scroll_edit.html#aa3712619eed5bd71ad7dde45f3e5a438',1,'CScrollEdit']]],
+  ['pretranslatemessage',['PreTranslateMessage',['../class_crobotsocietybeta_dlg.html#aa6af2bfc270a681e9804ee52a95cdbae',1,'CrobotsocietybetaDlg']]],
+  ['puppet',['PUPPET',['../class_p_u_p_p_e_t.html#a03999e942eb31be91023d5ac682707e7',1,'PUPPET']]]
 ];

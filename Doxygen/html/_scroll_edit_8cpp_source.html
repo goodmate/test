@@ -124,7 +124,7 @@ $(document).ready(function(){initNavTree('_scroll_edit_8cpp_source.html','');});
 <div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="_scroll_edit_8cpp.html#a4ee80497067ec3a241ef2e44818b4c22">   15</a></span>&#160;<span class="preprocessor">#define UWM_CHECKTEXT_MSG _T(&quot;UWM_CHECKTEXT_MSG-{D53C7065_FD4C_138A_BC72_01A0253651C0}&quot;)</span></div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//Resize Message</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">const</span> UINT <a class="code" href="class_c_scroll_edit.html#a01110ba0724a0ac7b1c3c8a454c308dc">CScrollEdit::UWM_CHECKTEXT</a> = ::RegisterWindowMessage(<a class="code" href="_scroll_edit_8cpp.html#a4ee80497067ec3a241ef2e44818b4c22">UWM_CHECKTEXT_MSG</a>);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">const</span> <a class="code" href="_multimedia_timer_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> <a class="code" href="class_c_scroll_edit.html#a01110ba0724a0ac7b1c3c8a454c308dc">CScrollEdit::UWM_CHECKTEXT</a> = ::RegisterWindowMessage(<a class="code" href="_scroll_edit_8cpp.html#a4ee80497067ec3a241ef2e44818b4c22">UWM_CHECKTEXT_MSG</a>);</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// CScrollEdit</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
@@ -206,7 +206,7 @@ $(document).ready(function(){initNavTree('_scroll_edit_8cpp_source.html','');});
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> CEdit::PreCreateWindow(cs);</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_c_scroll_edit.html#accefa4f9492cfe6262ccbfd745e40652">  102</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_c_scroll_edit.html#accefa4f9492cfe6262ccbfd745e40652">CScrollEdit::OnChar</a>(UINT nChar, UINT nRepCnt, UINT nFlags) </div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="class_c_scroll_edit.html#accefa4f9492cfe6262ccbfd745e40652">  102</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="class_c_scroll_edit.html#accefa4f9492cfe6262ccbfd745e40652">CScrollEdit::OnChar</a>(<a class="code" href="_multimedia_timer_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> nChar, <a class="code" href="_multimedia_timer_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> nRepCnt, <a class="code" href="_multimedia_timer_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a> nFlags) </div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;{</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="comment">//Possible Text Change</span></div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    PostMessage(<a class="code" href="class_c_scroll_edit.html#a01110ba0724a0ac7b1c3c8a454c308dc">UWM_CHECKTEXT</a>);</div>
@@ -232,6 +232,7 @@ $(document).ready(function(){initNavTree('_scroll_edit_8cpp_source.html','');});
 <div class="ttc" id="class_c_scroll_edit_html_ac4f2987c190f447f8b36d1d31e5bcef3"><div class="ttname"><a href="class_c_scroll_edit.html#ac4f2987c190f447f8b36d1d31e5bcef3">CScrollEdit::ShowHorizScrollBar</a></div><div class="ttdeci">void ShowHorizScrollBar(BOOL bShow=TRUE)</div><div class="ttdef"><b>Definition:</b> <a href="_scroll_edit_8h_source.html#l00061">ScrollEdit.h:61</a></div></div>
 <div class="ttc" id="class_c_scroll_edit_html_accefa4f9492cfe6262ccbfd745e40652"><div class="ttname"><a href="class_c_scroll_edit.html#accefa4f9492cfe6262ccbfd745e40652">CScrollEdit::OnChar</a></div><div class="ttdeci">afx_msg void OnChar(UINT nChar, UINT nRepCnt, UINT nFlags)</div><div class="ttdef"><b>Definition:</b> <a href="_scroll_edit_8cpp_source.html#l00102">ScrollEdit.cpp:102</a></div></div>
 <div class="ttc" id="class_c_scroll_edit_html_a2df7f6c802a21b654a007318afa325a8"><div class="ttname"><a href="class_c_scroll_edit.html#a2df7f6c802a21b654a007318afa325a8">CScrollEdit::ShowVertScrollBar</a></div><div class="ttdeci">void ShowVertScrollBar(BOOL bShow=TRUE)</div><div class="ttdef"><b>Definition:</b> <a href="_scroll_edit_8h_source.html#l00070">ScrollEdit.h:70</a></div></div>
+<div class="ttc" id="_multimedia_timer_8h_html_a36cb3b01d81ffd844bbbfb54003e06ec"><div class="ttname"><a href="_multimedia_timer_8h.html#a36cb3b01d81ffd844bbbfb54003e06ec">UINT</a></div><div class="ttdeci">unsigned int UINT</div><div class="ttdef"><b>Definition:</b> <a href="_multimedia_timer_8h_source.html#l00015">MultimediaTimer.h:15</a></div></div>
 <div class="ttc" id="_scroll_edit_8cpp_html_a4ee80497067ec3a241ef2e44818b4c22"><div class="ttname"><a href="_scroll_edit_8cpp.html#a4ee80497067ec3a241ef2e44818b4c22">UWM_CHECKTEXT_MSG</a></div><div class="ttdeci">#define UWM_CHECKTEXT_MSG</div><div class="ttdef"><b>Definition:</b> <a href="_scroll_edit_8cpp_source.html#l00015">ScrollEdit.cpp:15</a></div></div>
 <div class="ttc" id="_scroll_edit_8h_html"><div class="ttname"><a href="_scroll_edit_8h.html">ScrollEdit.h</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -240,7 +241,7 @@ $(document).ready(function(){initNavTree('_scroll_edit_8cpp_source.html','');});
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_9919179e432798222cc4a525897a83ee.html">RobotSimulator</a></li><li class="navelem"><a class="el" href="dir_5b3ce41fc6dfa65445c9be191f166a36.html">test</a></li><li class="navelem"><a class="el" href="dir_06cded7edbda7e78bf677bcd5b78cc89.html">robot_society</a></li><li class="navelem"><a class="el" href="dir_05ef4318fc9e3da04538da5d2600d340.html">robot society beta</a></li><li class="navelem"><a class="el" href="_scroll_edit_8cpp.html">ScrollEdit.cpp</a></li>
-    <li class="footer">생성시간 : 화 1월 27 2015 14:16:02, 프로젝트명 : Test, 생성자 : 
+    <li class="footer">생성시간 : 화 1월 27 2015 15:58:10, 프로젝트명 : Test, 생성자 : 
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

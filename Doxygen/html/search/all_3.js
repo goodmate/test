@@ -4,6 +4,8 @@ var searchData=
   ['ch',['ch',['../class_p_u_p_p_e_t.html#ad75871dc46e1110e54df4a4c64b774a7',1,'PUPPET']]],
   ['charactor',['CHARACTOR',['../struct_c_h_a_r_a_c_t_o_r.html',1,'CHARACTOR'],['../robot_01object_8h.html#aac3205732a6c9da4330797b1ed5cce84',1,'CHARACTOR():&#160;robot object.h']]],
   ['checkscrolling',['CheckScrolling',['../class_c_scroll_edit.html#a015f795b5d3b4c3f3c32cdf7dd3dcf6f',1,'CScrollEdit']]],
+  ['cini',['CIni',['../class_c_ini.html',1,'CIni'],['../class_c_ini.html#aea9b31b7ed992899571d6c85b25b2a3d',1,'CIni::CIni()']]],
+  ['cmultimediatimer',['CMultimediaTimer',['../class_c_multimedia_timer.html',1,'CMultimediaTimer'],['../class_c_multimedia_timer.html#abec770b6ffe2e273742d6efab76e78c5',1,'CMultimediaTimer::CMultimediaTimer()']]],
   ['color_5fd_5fblack',['COLOR_D_BLACK',['../parameters_8h.html#a610a2ac2d43482c8bd5db72f16ffb669',1,'parameters.h']]],
   ['color_5fd_5fblue',['COLOR_D_BLUE',['../parameters_8h.html#adca7713f49a026309f6528232c39878f',1,'parameters.h']]],
   ['color_5fd_5fbrown',['COLOR_D_BROWN',['../parameters_8h.html#a7c78f3580a1429d0d18415a4a346ae90',1,'parameters.h']]],

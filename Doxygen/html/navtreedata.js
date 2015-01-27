@@ -19,6 +19,8 @@ var NAVTREE =
         [ "함수", "globals_func.html", null ],
         [ "변수", "globals_vars.html", null ],
         [ "타입정의", "globals_type.html", null ],
+        [ "열거형 타입", "globals_enum.html", null ],
+        [ "열거형 멤버", "globals_eval.html", null ],
         [ "매크로", "globals_defs.html", null ]
       ] ]
     ] ]
@@ -27,8 +29,8 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_scroll_edit_8cpp.html",
-"robot__status_8h_source.html"
+"_ini_8cpp.html",
+"parameters_8h.html#a0a3cc1d5cde549e408f825ddd7f5853d"
 ];
 
 var SYNCONMSG = '패널 동기화를 비활성화하기 위해 클릭하십시오';

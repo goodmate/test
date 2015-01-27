@@ -1,20 +1,4 @@
 var searchData=
 [
-  ['onbnclickedcheckshowstatus',['OnBnClickedCheckShowStatus',['../class_r_o_b_o_t___s_t_a_t_u_s.html#af9d3278b50cdf79395d06acdd90d1122',1,'ROBOT_STATUS']]],
-  ['onbnclickedopenstatus',['OnBnClickedOpenStatus',['../class_crobotsocietybeta_dlg.html#aa6d29e898c87e30513125aa9e4209926',1,'CrobotsocietybetaDlg']]],
-  ['onbnclickedreset',['OnBnClickedReset',['../class_crobotsocietybeta_dlg.html#a3ee4894b432f6ed375219eb0fb215d39',1,'CrobotsocietybetaDlg']]],
-  ['onbnclickedstartstop',['OnBnClickedStartStop',['../class_crobotsocietybeta_dlg.html#ac82b32c29e4d7cf83df1e879a93c50c7',1,'CrobotsocietybetaDlg']]],
-  ['onchar',['OnChar',['../class_c_scroll_edit.html#accefa4f9492cfe6262ccbfd745e40652',1,'CScrollEdit']]],
-  ['onchecktext',['OnCheckText',['../class_c_scroll_edit.html#ab73cf88e073326b00bbeeb04eb6765e6',1,'CScrollEdit']]],
-  ['onenchangeedit1',['OnEnChangeEdit1',['../class_r_o_b_o_t___s_t_a_t_u_s.html#a7432b5de79c3d03791f766e6748db5cf',1,'ROBOT_STATUS']]],
-  ['oninitdialog',['OnInitDialog',['../class_crobotsocietybeta_dlg.html#aad78949dcf3a33d0ec0f29f8fd70050b',1,'CrobotsocietybetaDlg::OnInitDialog()'],['../class_r_o_b_o_t___s_t_a_t_u_s.html#a3bddd13f4c31c696c2742f7ad11ca275',1,'ROBOT_STATUS::OnInitDialog()']]],
-  ['onlbuttondown',['OnLButtonDown',['../class_crobotsocietybeta_dlg.html#a5a2bc6094ef521a4b844fdf5c10bf26a',1,'CrobotsocietybetaDlg']]],
-  ['onmousemove',['OnMouseMove',['../class_crobotsocietybeta_dlg.html#ab7329ad4052a9cc1b3db733bd408e177',1,'CrobotsocietybetaDlg']]],
-  ['onmousewheel',['OnMouseWheel',['../class_crobotsocietybeta_dlg.html#a4eadbb68ff517d3f01d0be634770ffb5',1,'CrobotsocietybetaDlg']]],
-  ['onnmcustomdrawsliderspeed',['OnNMCustomdrawSliderSpeed',['../class_crobotsocietybeta_dlg.html#a9b7327fc652ab69bc46628f56f3e5793',1,'CrobotsocietybetaDlg']]],
-  ['onpaint',['OnPaint',['../class_crobotsocietybeta_dlg.html#a9d56a64adabd9d8f46a2a812d82ce14c',1,'CrobotsocietybetaDlg']]],
-  ['onquerydragicon',['OnQueryDragIcon',['../class_crobotsocietybeta_dlg.html#ad43ae565a1bc00526bb4b7b5ae626309',1,'CrobotsocietybetaDlg']]],
-  ['onrbuttondown',['OnRButtonDown',['../class_crobotsocietybeta_dlg.html#a1bac9c5c05274de9167b2c897feb810b',1,'CrobotsocietybetaDlg']]],
-  ['onsyscommand',['OnSysCommand',['../class_crobotsocietybeta_dlg.html#a5e6e48f26adb3e91c6374cd902631c16',1,'CrobotsocietybetaDlg']]],
-  ['ontimer',['OnTimer',['../class_crobotsocietybeta_dlg.html#ab5f7f79b8d75eab6b5c4fdfb998b7857',1,'CrobotsocietybetaDlg']]]
+  ['neck_5flength',['neck_length',['../class_p_u_p_p_e_t.html#a822b5a0d9f607a9d176e0e1d2a26aad6',1,'PUPPET::neck_length()'],['../robot_01object_8h.html#a8e19c67e3c69ce08ed918ace87a74c8b',1,'NECK_LENGTH():&#160;robot object.h']]]
 ];

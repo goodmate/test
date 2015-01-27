@@ -1,0 +1,11 @@
+# id	x	y	theta	r
+# id - feature's unique id
+# x - feature's x position
+# y - feature's y position
+# theta - feature's direction (degree)
+# r - feature's detection radius
+ 
+1000  4.	3.	0		1.2 
+1001  7.	3.	0		1.2 
+1002  7.	6.	0		1.2 
+1003  10.	7.	0		1.2 

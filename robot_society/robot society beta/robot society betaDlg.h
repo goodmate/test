@@ -8,6 +8,7 @@
 #include <math.h>
 #include "afxcmn.h"
 #include "robot_status.h"
+#include "afxwin.h"
 
 
 // CrobotsocietybetaDlg 대화 상자
@@ -100,5 +101,10 @@ public:
 	afx_msg void OnLButtonDown(UINT nFlags, CPoint point);
 	afx_msg void OnNMCustomdrawSliderSpeed(NMHDR *pNMHDR, LRESULT *pResult);
 	afx_msg void OnBnClickedOpenStatus();
+	afx_msg void OnBnClickedButtonLoadMap();
+
+	CEdit m_log;
+	CString m_sLogString;
+	void showLog(CString strLog);
 };
 

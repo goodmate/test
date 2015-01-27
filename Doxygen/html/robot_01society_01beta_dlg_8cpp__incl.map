@@ -1,11 +1,13 @@
 <map id="D:/RobotSimulator/test/robot_society/robot society beta/robot society betaDlg.cpp" name="D:/RobotSimulator/test/robot_society/robot society beta/robot society betaDlg.cpp">
-<area shape="rect" id="node2" href="$stdafx_8h.html" title="stdafx.h" alt="" coords="210,408,278,435"/>
+<area shape="rect" id="node2" href="$stdafx_8h.html" title="stdafx.h" alt="" coords="237,408,305,435"/>
 <area shape="rect" id="node9" href="$robot_01society_01beta_8h.html" title="robot society beta.h" alt="" coords="587,109,725,136"/>
-<area shape="rect" id="node11" href="$robot_01society_01beta_dlg_8h.html" title="robot society betaDlg.h" alt="" coords="311,109,467,136"/>
-<area shape="rect" id="node3" href="$targetver_8h.html" title="targetver.h" alt="" coords="5,483,88,509"/>
-<area shape="rect" id="node10" href="$resource_8h.html" title="resource.h" alt="" coords="665,184,748,211"/>
-<area shape="rect" id="node13" href="$parameters_8h.html" title="parameters.h" alt="" coords="87,333,185,360"/>
-<area shape="rect" id="node14" href="$robot_01object_8h.html" title="robot object.h" alt="" coords="221,259,323,285"/>
-<area shape="rect" id="node17" href="$robot__status_8h.html" title="robot_status.h" alt="" coords="382,184,487,211"/>
-<area shape="rect" id="node15" href="$basic__function_8h.html" title="basic_function.h" alt="" coords="210,333,326,360"/>
+<area shape="rect" id="node11" href="$robot_01society_01beta_dlg_8h.html" title="robot society betaDlg.h" alt="" coords="402,109,558,136"/>
+<area shape="rect" id="node18" href="$map__2d_8h.html" title="map_2d.h" alt="" coords="753,109,831,136"/>
+<area shape="rect" id="node3" href="$targetver_8h.html" title="targetver.h" alt="" coords="99,483,181,509"/>
+<area shape="rect" id="node10" href="$resource_8h.html" title="resource.h" alt="" coords="672,184,755,211"/>
+<area shape="rect" id="node13" href="$parameters_8h.html" title="parameters.h" alt="" coords="365,333,464,360"/>
+<area shape="rect" id="node14" href="$robot_01object_8h.html" title="robot object.h" alt="" coords="253,259,355,285"/>
+<area shape="rect" id="node17" href="$robot__status_8h.html" title="robot_status.h" alt="" coords="235,184,341,211"/>
+<area shape="rect" id="node15" href="$basic__function_8h.html" title="basic_function.h" alt="" coords="225,333,341,360"/>
+<area shape="rect" id="node20" href="$dxf__parse_8h.html" title="dxf_parse.h" alt="" coords="830,184,919,211"/>
 </map>

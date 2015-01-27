@@ -1,0 +1,42 @@
+.TH "D:/RobotSimulator/test/robot_society/robot society beta/Common/MultimediaTimer.cpp" 3 "화 1월 27 2015" "Version Ver 1.0.0" "Test" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+D:/RobotSimulator/test/robot_society/robot society beta/Common/MultimediaTimer.cpp \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'StdAfx\&.h'\fP
+.br
+\fC#include <windows\&.h>\fP
+.br
+\fC#include <Mmsystem\&.h>\fP
+.br
+\fC#include <assert\&.h>\fP
+.br
+\fC#include 'MultimediaTimer\&.h'\fP
+.br
+
+.SS "함수"
+
+.in +1c
+.ti -1c
+.RI "static void CALLBACK \fBOneShotTimer\fP (\fBUINT\fP _timerId, \fBUINT\fP msg, \fBDWORD\fP dwUser, \fBDWORD\fP dw1, \fBDWORD\fP dw2)"
+.br
+.in -1c
+.SH "함수 문서화"
+.PP 
+.SS "static void CALLBACK OneShotTimer (\fBUINT\fP _timerId, \fBUINT\fP msg, \fBDWORD\fP dwUser, \fBDWORD\fP dw1, \fBDWORD\fP dw2)\fC [static]\fP"
+
+.PP
+MultimediaTimer\&.cpp 파일의 37 번째 라인에서 정의되었습니다\&.
+.PP
+.nf
+38 {
+39     CMultimediaTimer *pThis = (CMultimediaTimer *)dwUser;
+40     pThis->OnTimer (_timerId, msg);
+41 } 
+.fi
+.SH "작성자"
+.PP 
+소스 코드로부터 Test를 위해 Doxygen에 의해 자동으로 생성됨\&.

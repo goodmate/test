@@ -3,6 +3,8 @@ var resource_8h =
     [ "IDB_OPEN_STATUS", "resource_8h.html#a5521f1d57aa54f34c8effd1e4e2975ed", null ],
     [ "IDB_RESET", "resource_8h.html#ac8241de69d3f92348e6fe633332515dd", null ],
     [ "IDB_START_STOP", "resource_8h.html#a7021f9c664a1f0413aecc9ede6914af2", null ],
+    [ "IDC_BUTTON1", "resource_8h.html#acfb35c4efbc593430638b09db17f2870", null ],
+    [ "IDC_BUTTON_LOAD_MAP", "resource_8h.html#a6aa3dc4c199d97d01fa823fede19886c", null ],
     [ "IDC_CHECK_SHOW_STATUS", "resource_8h.html#aad5b782ab70db78117b7db92aabdaab0", null ],
     [ "IDC_EDIT1", "resource_8h.html#ad123446cb35c803caf42a339fc842813", null ],
     [ "IDC_EDIT2", "resource_8h.html#a4aae7cdb86571102c3b4483889b88c6f", null ],

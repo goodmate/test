@@ -17,6 +17,7 @@ var class_crobotsocietybeta_dlg =
     [ "DrawCircle", "class_crobotsocietybeta_dlg.html#af937ddcf1f249b6e937aea82324946a7", null ],
     [ "DrawCircle", "class_crobotsocietybeta_dlg.html#ac9813f1c2bc5f086141f234521299ad7", null ],
     [ "DrawCircle", "class_crobotsocietybeta_dlg.html#aa5e31e99fc921d02d5c042bcff2c1827", null ],
+    [ "OnBnClickedButtonLoadMap", "class_crobotsocietybeta_dlg.html#ac6cbc13501a05570cf8c0f7d099ee03e", null ],
     [ "OnBnClickedOpenStatus", "class_crobotsocietybeta_dlg.html#aa6d29e898c87e30513125aa9e4209926", null ],
     [ "OnBnClickedReset", "class_crobotsocietybeta_dlg.html#a3ee4894b432f6ed375219eb0fb215d39", null ],
     [ "OnBnClickedStartStop", "class_crobotsocietybeta_dlg.html#ac82b32c29e4d7cf83df1e879a93c50c7", null ],

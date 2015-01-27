@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['setv',['SetV',['../class_p_u_p_p_e_t.html#a2ac62608c61ebc67fdac2e83d3c53f3d',1,'PUPPET']]],
-  ['setw',['SetW',['../class_p_u_p_p_e_t.html#a506a48ca180dae8cc4ee31ae143598bc',1,'PUPPET']]],
-  ['setwindowtext',['SetWindowText',['../class_c_scroll_edit.html#afad81d723c6cbc3169c27cf71dd8b271',1,'CScrollEdit']]],
-  ['showhorizscrollbar',['ShowHorizScrollBar',['../class_c_scroll_edit.html#ac4f2987c190f447f8b36d1d31e5bcef3',1,'CScrollEdit']]],
-  ['showvertscrollbar',['ShowVertScrollBar',['../class_c_scroll_edit.html#a2df7f6c802a21b654a007318afa325a8',1,'CScrollEdit']]]
+  ['reset',['Reset',['../class_p_u_p_p_e_t.html#ae9a389c6276bdcb0191bda256dbf9e6d',1,'PUPPET']]],
+  ['robot_5fobjects',['ROBOT_OBJECTS',['../class_r_o_b_o_t___o_b_j_e_c_t_s.html#ace6bf31483e80b648e372911f23b4af4',1,'ROBOT_OBJECTS']]],
+  ['robot_5fstatus',['ROBOT_STATUS',['../class_r_o_b_o_t___s_t_a_t_u_s.html#af5ff4f583af1ed6b0b837af304f50aee',1,'ROBOT_STATUS']]]
 ];
