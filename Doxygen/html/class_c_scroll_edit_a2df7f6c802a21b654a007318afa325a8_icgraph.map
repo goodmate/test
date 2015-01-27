@@ -1,5 +1,0 @@
-<map id="CScrollEdit::ShowVertScrollBar" name="CScrollEdit::ShowVertScrollBar">
-<area shape="rect" id="node2" href="$class_c_scroll_edit.html#a015f795b5d3b4c3f3c32cdf7dd3dcf6f" title="CScrollEdit::CheckScrolling" alt="" coords="257,31,440,57"/>
-<area shape="rect" id="node3" href="$class_c_scroll_edit.html#afad81d723c6cbc3169c27cf71dd8b271" title="CScrollEdit::SetWindowText" alt="" coords="488,5,675,32"/>
-<area shape="rect" id="node4" href="$class_c_scroll_edit.html#ab73cf88e073326b00bbeeb04eb6765e6" title="CScrollEdit::OnCheckText" alt="" coords="494,56,669,83"/>
-</map>

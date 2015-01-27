@@ -1,6 +1,0 @@
-<map id="PUPPET::Reset" name="PUPPET::Reset">
-<area shape="rect" id="node2" href="$class_p_u_p_p_e_t.html#a03999e942eb31be91023d5ac682707e7" title="PUPPET::PUPPET" alt="" coords="184,5,319,32"/>
-<area shape="rect" id="node3" href="$class_r_o_b_o_t___o_b_j_e_c_t_s.html#aa461f5d461995fb7b73e6b4419e9ee6b" title="ROBOT_OBJECTS::Add" alt="" coords="169,56,333,83"/>
-<area shape="rect" id="node4" href="$class_crobotsocietybeta_dlg.html#a5a2bc6094ef521a4b844fdf5c10bf26a" title="CrobotsocietybetaDlg\l::OnLButtonDown" alt="" coords="381,15,528,57"/>
-<area shape="rect" id="node5" href="$class_crobotsocietybeta_dlg.html#a3ee4894b432f6ed375219eb0fb215d39" title="CrobotsocietybetaDlg\l::OnBnClickedReset" alt="" coords="381,81,528,122"/>
-</map>
